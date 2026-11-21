@@ -1,0 +1,166 @@
+/* Ditty — 日本語 */
+
+/* ステータスバーメニュー */
+"Show Ditty    %@" = "Ditty を表示    %@";
+"Options…" = "環境設定…";
+"Disconnect from Clipboard" = "クリップボードの監視を停止";
+"Connect to Clipboard" = "クリップボードを監視";
+"Delete All Clips…" = "すべてのクリップを削除…";
+"Exit" = "終了";
+
+/* アプリメニュー・編集メニュー */
+"Quit Ditty" = "Ditty を終了";
+"Edit" = "編集";
+"Undo" = "取り消す";
+"Redo" = "やり直す";
+"Cut" = "カット";
+"Copy" = "コピー";
+"Paste" = "ペースト";
+"Select All" = "すべて選択";
+
+/* アラート */
+"Delete all clips?" = "すべてのクリップを削除しますか?";
+"This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone." = "保存済みのすべてのコピーを削除します。ただし、ピン留めされたクリップ、「自動削除しない」が設定されたクリップ、グループ内のクリップは削除されません。この操作は取り消せません。";
+"Delete" = "削除";
+"Cancel" = "キャンセル";
+"Ditty needs the Accessibility permission to paste for you" = "Ditty が自動ペーストするには「アクセシビリティ」の許可が必要です";
+"The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility." = "クリップはすでにクリップボードにあるので、今すぐ ⌘V で手動ペーストできます。\n\nDitty に自動ペーストを許可するには、システム設定 → プライバシーとセキュリティ → アクセシビリティ で Ditty をオンにしてください。";
+"Open System Settings" = "システム設定を開く";
+"Not Now" = "後で";
+
+/* 環境設定ウィンドウ */
+"Ditty Options" = "Ditty 環境設定";
+"General" = "一般";
+"Supported Types" = "対応するタイプ";
+"Keyboard Shortcuts" = "キーボードショートカット";
+"Quick Paste" = "クイックペースト";
+"About" = "情報";
+
+/* 一般タブ */
+"Start Ditty on system startup" = "ログイン時に Ditty を起動";
+"Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work." = "ログイン項目を変更できませんでした。この機能は Ditty.app バンドルから起動した場合にのみ機能します。";
+"Maximum number of saved copies" = "保存するコピーの最大数";
+"Paste entries expire after" = "クリップの有効期限";
+"days" = "日";
+"Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically." = "ピン留めされたクリップ、「自動削除しない」が設定されたクリップ、グループ内のクリップは自動的に削除されません。";
+"Update clip order on paste" = "ペースト時にクリップの順序を更新";
+"Theme:" = "テーマ:";
+"Ditto (default)" = "Ditto(デフォルト)";
+"Dark" = "ダーク";
+"Language:" = "言語:";
+"System Default" = "システムに従う";
+"Database:" = "データベース:";
+"Show in Finder" = "Finder で表示";
+
+/* 対応するタイプタブ */
+"Ditty saves these kinds of clipboard data:" = "Ditty は次の種類のクリップボードデータを保存します:";
+"Plain text" = "プレーンテキスト";
+"Rich text (RTF)" = "リッチテキスト(RTF)";
+"HTML" = "HTML";
+"Images" = "画像";
+"Files copied in Finder" = "Finder でコピーしたファイル";
+"Copies that an app marks as confidential or temporary — password managers do this — are never saved." = "アプリが機密または一時的としてマークしたコピー(パスワード管理アプリなどがこれに該当)は保存されません。";
+
+/* キーボードショートカットタブ */
+"Activate Ditty:" = "Ditty を呼び出す:";
+"Click the button, then press the new shortcut." = "ボタンをクリックして、新しいショートカットを入力してください。";
+"In the Ditty window:" = "Ditty ウィンドウ内:";
+"Paste the selected clip" = "選択したクリップをペースト";
+"Paste as plain text" = "プレーンテキストとしてペースト";
+"Paste clip 1 – 10" = "クリップ 1 – 10 をペースト";
+"Move through the list" = "リスト内を移動";
+"Delete the selected clips" = "選択したクリップを削除";
+"Copy to the clipboard without pasting" = "ペーストせずにクリップボードへコピー";
+"Show the full clip" = "クリップ全体を表示";
+"New group" = "新規グループ";
+"Clip properties" = "クリップの情報を見る";
+"Leave the current group" = "現在のグループから出る";
+"Clear the search, then close" = "検索をクリアしてから閉じる";
+
+/* クイックペーストタブ */
+"Lines per row:" = "1行の表示行数:";
+"Font size:" = "フォントサイズ:";
+"Transparency:" = "不透明度:";
+"Show the window:" = "ウィンドウの表示位置:";
+"At the text caret" = "テキストキャレット位置";
+"At the mouse cursor" = "マウスカーソル位置";
+"At its previous position" = "前回の位置";
+"Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor." = "キャレット位置の取得には「アクセシビリティ」の許可が必要で、報告しないアプリもあります。その場合 Ditty はマウスカーソル位置に表示します。";
+"Always on top (stay open after pasting or clicking elsewhere)" = "常に手前に表示(ペースト後や他の場所をクリックしても開いたまま)";
+"Show thumbnails for copied images" = "コピーした画像のサムネイルを表示";
+
+/* 情報タブ */
+"Version %@" = "バージョン %@";
+"An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project." = "Windows 用クリップボードマネージャー Ditto(Scott Brogden 作、sabrogden.github.io/Ditto)の非公式 Mac 版です。本プロジェクトはオリジナルとは提携・承認関係にありません。";
+"%lld clips saved." = "%lld 件のクリップを保存中。";
+
+/* クリップ情報ウィンドウ */
+"Group Properties" = "グループの情報";
+"Clip Properties" = "クリップの情報";
+"Date: %@" = "日付:%@";
+"Last pasted: %@" = "最終ペースト:%@";
+"Name:" = "名前:";
+"Text:" = "テキスト:";
+"Description (this clip has no editable text):" = "説明(このクリップには編集可能なテキストがありません):";
+"Quick paste text:" = "クイックペースト用キーワード:";
+"Extra text to find this clip by when searching" = "このクリップを検索で見つけるための追加キーワード";
+"Never auto delete" = "自動削除しない";
+"Group:" = "グループ:";
+"Main List" = "メインリスト";
+"Saved formats: %@" = "保存済みフォーマット:%@";
+"OK" = "OK";
+"Image (PNG)" = "画像(PNG)";
+"Files" = "ファイル";
+
+/* クイックペーストポップアップ */
+"Search" = "検索";
+"Search  ·  %@" = "検索  ·  %@";
+"New Group" = "新規グループ";
+"Group name:" = "グループ名:";
+"All Clips" = "すべてのクリップ";
+"New Group…" = "新規グループ…";
+"New Group From Selection…" = "選択項目から新規グループ…";
+"Move to Group" = "グループへ移動";
+"View Group" = "グループを表示";
+"Paste Special" = "特殊なペースト";
+"Plain Text Only" = "プレーンテキストのみ";
+"UPPER CASE" = "大文字";
+"lower case" = "小文字";
+"Capitalize" = "先頭を大文字";
+"Sentence case" = "文頭を大文字";
+"Camel Case" = "キャメルケース";
+"Slugify" = "スラッグ化";
+"Remove Line Feeds" = "改行を削除";
+"Paste + One Line Feed" = "ペースト + 改行1つ";
+"Paste + Two Line Feeds" = "ペースト + 改行2つ";
+"Trim White Space" = "前後の空白を削除";
+"Add Current Time" = "現在時刻を追加";
+"Typoglycemia" = "タイポグリセミア";
+"Copy to Clipboard" = "クリップボードにコピー";
+"Groups" = "グループ";
+"Clip Order" = "クリップの順序";
+"Move to Top" = "一番上へ移動";
+"Make Top Sticky Clip" = "先頭にピン留め";
+"Make Last Sticky Clip" = "末尾にピン留め";
+"Remove Sticky Setting" = "ピン留めを解除";
+"Never Auto Delete" = "自動削除しない";
+"View Full Description" = "全文を表示";
+"Properties…" = "情報を見る…";
+"Delete Clip" = "クリップを削除";
+"Quick Options" = "クイック設定";
+"Lines Per Row" = "1行の表示行数";
+"Font Size" = "フォントサイズ";
+"None" = "なし";
+"Positioning" = "表示位置";
+"At Caret" = "キャレット位置";
+"At Cursor" = "カーソル位置";
+"At Previous Position" = "前回の位置";
+"Always on Top" = "常に手前に表示";
+"Show Thumbnails" = "サムネイルを表示";
+"Dark Theme" = "ダークテーマ";
+
+/* その他 */
+"Image %@" = "画像 %@";
+"Type shortcut…" = "ショートカットを入力…";
+"Key %lld" = "キー %lld";
+"Space" = "スペース";

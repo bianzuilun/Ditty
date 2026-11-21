@@ -1,0 +1,166 @@
+/* Ditty — 繁體中文 */
+
+/* 狀態列選單 */
+"Show Ditty    %@" = "顯示 Ditty    %@";
+"Options…" = "選項…";
+"Disconnect from Clipboard" = "停止監看剪貼簿";
+"Connect to Clipboard" = "開始監看剪貼簿";
+"Delete All Clips…" = "刪除所有剪貼項目…";
+"Exit" = "結束";
+
+/* 應用程式選單與編輯選單 */
+"Quit Ditty" = "結束 Ditty";
+"Edit" = "編輯";
+"Undo" = "還原";
+"Redo" = "重做";
+"Cut" = "剪下";
+"Copy" = "拷貝";
+"Paste" = "貼上";
+"Select All" = "全選";
+
+/* 對話框 */
+"Delete all clips?" = "刪除所有剪貼項目?";
+"This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone." = "將刪除所有已儲存的副本,但釘選項目、標記為「永不自動刪除」的項目以及群組內的項目不受影響。此操作無法復原。";
+"Delete" = "刪除";
+"Cancel" = "取消";
+"Ditty needs the Accessibility permission to paste for you" = "Ditty 需要「輔助使用」權限才能代你貼上";
+"The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility." = "剪貼內容已複製到剪貼簿,你現在可以直接按 ⌘V 貼上。\n\n若要讓 Ditty 自動貼上,請在 系統設定 → 隱私權與安全性 → 輔助使用 中開啟 Ditty。";
+"Open System Settings" = "打開系統設定";
+"Not Now" = "稍後再說";
+
+/* 選項視窗 */
+"Ditty Options" = "Ditty 選項";
+"General" = "一般";
+"Supported Types" = "支援的類型";
+"Keyboard Shortcuts" = "鍵盤快速鍵";
+"Quick Paste" = "快速貼上";
+"About" = "關於";
+
+/* 一般標籤頁 */
+"Start Ditty on system startup" = "登入時啟動 Ditty";
+"Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work." = "Ditty 無法更改登入項目。此功能必須從 Ditty.app 應用程式套件內執行才能生效。";
+"Maximum number of saved copies" = "最大儲存數量";
+"Paste entries expire after" = "剪貼項目逾期時間";
+"days" = "天";
+"Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically." = "釘選項目、標記為「永不自動刪除」的項目以及群組內的項目不會被自動移除。";
+"Update clip order on paste" = "貼上時更新項目順序";
+"Theme:" = "主題:";
+"Ditto (default)" = "Ditto(預設)";
+"Dark" = "深色";
+"Language:" = "語言:";
+"System Default" = "跟隨系統";
+"Database:" = "資料庫:";
+"Show in Finder" = "在 Finder 中顯示";
+
+/* 支援的類型標籤頁 */
+"Ditty saves these kinds of clipboard data:" = "Ditty 會儲存以下類型的剪貼簿資料:";
+"Plain text" = "純文字";
+"Rich text (RTF)" = "豐富文字(RTF)";
+"HTML" = "HTML";
+"Images" = "影像";
+"Files copied in Finder" = "在 Finder 中拷貝的檔案";
+"Copies that an app marks as confidential or temporary — password managers do this — are never saved." = "應用程式標記為機密或暫存的副本(如密碼管理器的做法)一律不會儲存。";
+
+/* 鍵盤快速鍵標籤頁 */
+"Activate Ditty:" = "呼出 Ditty:";
+"Click the button, then press the new shortcut." = "點按按鈕,然後按下新的快速鍵。";
+"In the Ditty window:" = "在 Ditty 視窗中:";
+"Paste the selected clip" = "貼上所選項目";
+"Paste as plain text" = "以純文字貼上";
+"Paste clip 1 – 10" = "貼上第 1 – 10 個項目";
+"Move through the list" = "在列表中移動";
+"Delete the selected clips" = "刪除所選項目";
+"Copy to the clipboard without pasting" = "僅拷貝到剪貼簿,不貼上";
+"Show the full clip" = "顯示完整內容";
+"New group" = "新增群組";
+"Clip properties" = "項目屬性";
+"Leave the current group" = "返回上一層群組";
+"Clear the search, then close" = "清除搜尋後關閉";
+
+/* 快速貼上標籤頁 */
+"Lines per row:" = "每項目行數:";
+"Font size:" = "字號:";
+"Transparency:" = "不透明度:";
+"Show the window:" = "視窗顯示位置:";
+"At the text caret" = "文字插入點處";
+"At the mouse cursor" = "滑鼠指標處";
+"At its previous position" = "上次位置";
+"Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor." = "定位插入點需要「輔助使用」權限,且並非所有應用程式都會回報插入點位置;此時 Ditty 會改以滑鼠指標位置顯示。";
+"Always on top (stay open after pasting or clicking elsewhere)" = "固定在最上層(貼上或點按其他位置後視窗保持開啟)";
+"Show thumbnails for copied images" = "顯示所拷貝影像的縮圖";
+
+/* 關於標籤頁 */
+"Version %@" = "版本 %@";
+"An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project." = "非官方的 Mac 版 Ditto。原版為 Scott Brogden 開發的 Windows 剪貼簿管理員(sabrogden.github.io/Ditto)。本專案與原版並無隸屬或背書關係。";
+"%lld clips saved." = "已儲存 %lld 筆剪貼紀錄。";
+
+/* 項目屬性視窗 */
+"Group Properties" = "群組屬性";
+"Clip Properties" = "項目屬性";
+"Date: %@" = "日期:%@";
+"Last pasted: %@" = "上次貼上:%@";
+"Name:" = "名稱:";
+"Text:" = "文字:";
+"Description (this clip has no editable text):" = "描述(此項目沒有可編輯的文字):";
+"Quick paste text:" = "快速貼上關鍵字:";
+"Extra text to find this clip by when searching" = "額外的搜尋關鍵字,方便日後查找此項目";
+"Never auto delete" = "永不自動刪除";
+"Group:" = "群組:";
+"Main List" = "主列表";
+"Saved formats: %@" = "已儲存格式:%@";
+"OK" = "好";
+"Image (PNG)" = "影像(PNG)";
+"Files" = "檔案";
+
+/* 快速貼上彈出視窗 */
+"Search" = "搜尋";
+"Search  ·  %@" = "搜尋  ·  %@";
+"New Group" = "新增群組";
+"Group name:" = "群組名稱:";
+"All Clips" = "所有項目";
+"New Group…" = "新增群組…";
+"New Group From Selection…" = "將所選項目歸入新群組…";
+"Move to Group" = "移至群組";
+"View Group" = "檢視群組";
+"Paste Special" = "特殊貼上";
+"Plain Text Only" = "僅純文字";
+"UPPER CASE" = "全部大寫";
+"lower case" = "全部小寫";
+"Capitalize" = "字首大寫";
+"Sentence case" = "句首大寫";
+"Camel Case" = "駝峰式命名";
+"Slugify" = "Slug 化";
+"Remove Line Feeds" = "移除換行";
+"Paste + One Line Feed" = "貼上 + 一個換行";
+"Paste + Two Line Feeds" = "貼上 + 兩個換行";
+"Trim White Space" = "去除前後空白";
+"Add Current Time" = "附加目前時間";
+"Typoglycemia" = "亂序混淆(Typoglycemia)";
+"Copy to Clipboard" = "拷貝到剪貼簿";
+"Groups" = "群組";
+"Clip Order" = "項目順序";
+"Move to Top" = "移至頂端";
+"Make Top Sticky Clip" = "釘選在頂端";
+"Make Last Sticky Clip" = "釘選在底端";
+"Remove Sticky Setting" = "取消釘選";
+"Never Auto Delete" = "永不自動刪除";
+"View Full Description" = "檢視完整內容";
+"Properties…" = "屬性…";
+"Delete Clip" = "刪除項目";
+"Quick Options" = "快速選項";
+"Lines Per Row" = "每項目行數";
+"Font Size" = "字號";
+"None" = "無";
+"Positioning" = "顯示位置";
+"At Caret" = "文字插入點處";
+"At Cursor" = "滑鼠指標處";
+"At Previous Position" = "上次位置";
+"Always on Top" = "固定在最上層";
+"Show Thumbnails" = "顯示縮圖";
+"Dark Theme" = "深色主題";
+
+/* 其他 */
+"Image %@" = "影像 %@";
+"Type shortcut…" = "按下快速鍵…";
+"Key %lld" = "按鍵 %lld";
+"Space" = "空白鍵";

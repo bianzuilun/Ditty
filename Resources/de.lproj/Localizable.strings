@@ -1,0 +1,166 @@
+/* Ditty — Deutsch */
+
+/* Statusleisten-Menü */
+"Show Ditty    %@" = "Ditty anzeigen    %@";
+"Options…" = "Einstellungen …";
+"Disconnect from Clipboard" = "Von Zwischenablage trennen";
+"Connect to Clipboard" = "Mit Zwischenablage verbinden";
+"Delete All Clips…" = "Alle Einträge löschen …";
+"Exit" = "Beenden";
+
+/* App- und Bearbeiten-Menü */
+"Quit Ditty" = "Ditty beenden";
+"Edit" = "Bearbeiten";
+"Undo" = "Widerrufen";
+"Redo" = "Wiederholen";
+"Cut" = "Ausschneiden";
+"Copy" = "Kopieren";
+"Paste" = "Einsetzen";
+"Select All" = "Alles auswählen";
+
+/* Hinweise */
+"Delete all clips?" = "Alle Einträge löschen?";
+"This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone." = "Dies entfernt alle gespeicherten Kopien – außer angehefteten Einträgen, Einträgen mit „Nie automatisch löschen“ und Einträgen in Gruppen. Lässt sich nicht rückgängig machen.";
+"Delete" = "Löschen";
+"Cancel" = "Abbrechen";
+"Ditty needs the Accessibility permission to paste for you" = "Ditty benötigt die Bedienungshilfen-Berechtigung, um für dich einzusetzen";
+"The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility." = "Der Eintrag liegt bereits in deiner Zwischenablage, du kannst also selbst ⌘V drücken.\n\nDamit Ditty automatisch einsetzt, aktiviere Ditty unter Systemeinstellungen → Datenschutz & Sicherheit → Bedienungshilfen.";
+"Open System Settings" = "Systemeinstellungen öffnen";
+"Not Now" = "Nicht jetzt";
+
+/* Optionsfenster */
+"Ditty Options" = "Ditty-Einstellungen";
+"General" = "Allgemein";
+"Supported Types" = "Unterstützte Formate";
+"Keyboard Shortcuts" = "Tastaturkurzbefehle";
+"Quick Paste" = "Schnelles Einfügen";
+"About" = "Über";
+
+/* Tab „Allgemein“ */
+"Start Ditty on system startup" = "Ditty beim Systemstart öffnen";
+"Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work." = "Ditty konnte sein Login-Objekt nicht ändern. Dies funktioniert nur, wenn die App aus dem Ditty.app-Bundle läuft.";
+"Maximum number of saved copies" = "Maximale Anzahl gespeicherter Kopien";
+"Paste entries expire after" = "Einträge laufen ab nach";
+"days" = "Tagen";
+"Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically." = "Angeheftete Einträge, Einträge mit „Nie automatisch löschen“ und Einträge in Gruppen werden nie automatisch entfernt.";
+"Update clip order on paste" = "Reihenfolge beim Einsetzen aktualisieren";
+"Theme:" = "Erscheinungsbild:";
+"Ditto (default)" = "Ditto (Standard)";
+"Dark" = "Dunkel";
+"Language:" = "Sprache:";
+"System Default" = "Systemeinstellung";
+"Database:" = "Datenbank:";
+"Show in Finder" = "Im Finder zeigen";
+
+/* Tab „Unterstützte Formate“ */
+"Ditty saves these kinds of clipboard data:" = "Ditty speichert diese Arten von Zwischenablage-Daten:";
+"Plain text" = "Reiner Text";
+"Rich text (RTF)" = "Formatierter Text (RTF)";
+"HTML" = "HTML";
+"Images" = "Bilder";
+"Files copied in Finder" = "Im Finder kopierte Dateien";
+"Copies that an app marks as confidential or temporary — password managers do this — are never saved." = "Kopien, die eine App als vertraulich oder temporär markiert (Passwort-Manager tun dies), werden nie gespeichert.";
+
+/* Tab „Tastaturkurzbefehle“ */
+"Activate Ditty:" = "Ditty aktivieren:";
+"Click the button, then press the new shortcut." = "Klicke auf den Knopf und drücke dann den neuen Kurzbefehl.";
+"In the Ditty window:" = "Im Ditty-Fenster:";
+"Paste the selected clip" = "Ausgewählten Eintrag einsetzen";
+"Paste as plain text" = "Als reinen Text einsetzen";
+"Paste clip 1 – 10" = "Eintrag 1 – 10 einsetzen";
+"Move through the list" = "Durch die Liste bewegen";
+"Delete the selected clips" = "Ausgewählte Einträge löschen";
+"Copy to the clipboard without pasting" = "Nur in die Zwischenablage kopieren, ohne einzusetzen";
+"Show the full clip" = "Ganzen Eintrag zeigen";
+"New group" = "Neue Gruppe";
+"Clip properties" = "Eintragseigenschaften";
+"Leave the current group" = "Aktuelle Gruppe verlassen";
+"Clear the search, then close" = "Suche löschen, dann schließen";
+
+/* Tab „Schnelles Einfügen“ */
+"Lines per row:" = "Zeilen pro Eintrag:";
+"Font size:" = "Schriftgröße:";
+"Transparency:" = "Transparenz:";
+"Show the window:" = "Fenster anzeigen:";
+"At the text caret" = "An der Texteinfügemarke";
+"At the mouse cursor" = "Am Mauszeiger";
+"At its previous position" = "An der vorherigen Position";
+"Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor." = "Das Finden der Einfügemarke benötigt die Bedienungshilfen-Berechtigung, und nicht jede App meldet sie; Ditty weicht dann auf den Mauszeiger aus.";
+"Always on top (stay open after pasting or clicking elsewhere)" = "Immer im Vordergrund (nach dem Einsetzen oder Klicken woanders offen bleiben)";
+"Show thumbnails for copied images" = "Vorschaubilder für kopierte Bilder zeigen";
+
+/* Tab „Über“ */
+"Version %@" = "Version %@";
+"An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project." = "Eine inoffizielle Mac-Version von Ditto, dem Windows-Zwischenablage-Manager von Scott Brogden (sabrogden.github.io/Ditto). Steht in keiner Verbindung zum Original und wird von ihm nicht unterstützt.";
+"%lld clips saved." = "%lld Einträge gespeichert.";
+
+/* Fenster „Eintragseigenschaften“ */
+"Group Properties" = "Gruppeneigenschaften";
+"Clip Properties" = "Eintragseigenschaften";
+"Date: %@" = "Datum: %@";
+"Last pasted: %@" = "Zuletzt eingesetzt: %@";
+"Name:" = "Name:";
+"Text:" = "Text:";
+"Description (this clip has no editable text):" = "Beschreibung (dieser Eintrag hat keinen editierbaren Text):";
+"Quick paste text:" = "Schnelleinfüge-Text:";
+"Extra text to find this clip by when searching" = "Zusätzlicher Text, um diesen Eintrag bei der Suche zu finden";
+"Never auto delete" = "Nie automatisch löschen";
+"Group:" = "Gruppe:";
+"Main List" = "Hauptliste";
+"Saved formats: %@" = "Gespeicherte Formate: %@";
+"OK" = "OK";
+"Image (PNG)" = "Bild (PNG)";
+"Files" = "Dateien";
+
+/* Schnellöffnen-Popup */
+"Search" = "Suchen";
+"Search  ·  %@" = "Suchen  ·  %@";
+"New Group" = "Neue Gruppe";
+"Group name:" = "Gruppenname:";
+"All Clips" = "Alle Einträge";
+"New Group…" = "Neue Gruppe …";
+"New Group From Selection…" = "Neue Gruppe aus Auswahl …";
+"Move to Group" = "In Gruppe verschieben";
+"View Group" = "Gruppe anzeigen";
+"Paste Special" = "Speziell einsetzen";
+"Plain Text Only" = "Nur reiner Text";
+"UPPER CASE" = "GROSSBUCHSTABEN";
+"lower case" = "kleinbuchstaben";
+"Capitalize" = "Wortanfänge groß";
+"Sentence case" = "Satzanfänge groß";
+"Camel Case" = "CamelCase";
+"Slugify" = "Slugify";
+"Remove Line Feeds" = "Zeilenumbrüche entfernen";
+"Paste + One Line Feed" = "Einsetzen + ein Umbruch";
+"Paste + Two Line Feeds" = "Einsetzen + zwei Umbrüche";
+"Trim White Space" = "Leerzeichen trimmen";
+"Add Current Time" = "Aktuelle Zeit anhängen";
+"Typoglycemia" = "Typoglycemia";
+"Copy to Clipboard" = "In Zwischenablage kopieren";
+"Groups" = "Gruppen";
+"Clip Order" = "Reihenfolge";
+"Move to Top" = "Nach oben verschieben";
+"Make Top Sticky Clip" = "Oben anheften";
+"Make Last Sticky Clip" = "Unten anheften";
+"Remove Sticky Setting" = "Anheftung aufheben";
+"Never Auto Delete" = "Nie automatisch löschen";
+"View Full Description" = "Ganze Beschreibung zeigen";
+"Properties…" = "Eigenschaften …";
+"Delete Clip" = "Eintrag löschen";
+"Quick Options" = "Schnelloptionen";
+"Lines Per Row" = "Zeilen pro Eintrag";
+"Font Size" = "Schriftgröße";
+"None" = "Keine";
+"Positioning" = "Positionierung";
+"At Caret" = "An der Einfügemarke";
+"At Cursor" = "Am Zeiger";
+"At Previous Position" = "An vorheriger Position";
+"Always on Top" = "Immer im Vordergrund";
+"Show Thumbnails" = "Vorschaubilder zeigen";
+"Dark Theme" = "Dunkles Erscheinungsbild";
+
+/* Verschiedenes */
+"Image %@" = "Bild %@";
+"Type shortcut…" = "Kurzbefehl drücken …";
+"Key %lld" = "Taste %lld";
+"Space" = "Leertaste";

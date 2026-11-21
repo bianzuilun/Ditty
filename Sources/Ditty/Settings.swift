@@ -39,6 +39,10 @@ enum S {
     }
     static var firstRunDone: Bool { get { bool("firstRunDone", false) } set { d.set(newValue, forKey: "firstRunDone") } }
 
+    /// Interface language: "system" follows macOS's preferred languages (the default),
+    /// otherwise a code from L10n.available such as "en" or "zh-Hans".
+    static var language: String { get { d.string(forKey: "language") ?? "system" } set { d.set(newValue, forKey: "language") } }
+
     static var databasePath: String {
         if let p = ProcessInfo.processInfo.environment["DITTY_DB"] { return p }
         let dir = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("Ditty")

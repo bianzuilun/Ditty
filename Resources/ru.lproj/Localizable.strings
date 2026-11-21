@@ -1,0 +1,166 @@
+/* Ditty — Русский */
+
+/* Меню строки состояния */
+"Show Ditty    %@" = "Показать Ditty    %@";
+"Options…" = "Настройки…";
+"Disconnect from Clipboard" = "Отключить от буфера обмена";
+"Connect to Clipboard" = "Подключить к буферу обмена";
+"Delete All Clips…" = "Удалить все записи…";
+"Exit" = "Выход";
+
+/* Меню приложения и «Правка» */
+"Quit Ditty" = "Завершить Ditty";
+"Edit" = "Правка";
+"Undo" = "Отменить";
+"Redo" = "Повторить";
+"Cut" = "Вырезать";
+"Copy" = "Скопировать";
+"Paste" = "Вставить";
+"Select All" = "Выбрать все";
+
+/* Предупреждения */
+"Delete all clips?" = "Удалить все записи?";
+"This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone." = "Будут удалены все сохранённые копии, кроме закреплённых записей, записей с пометкой «Никогда не удалять автоматически» и записей внутри групп. Действие нельзя отменить.";
+"Delete" = "Удалить";
+"Cancel" = "Отмена";
+"Ditty needs the Accessibility permission to paste for you" = "Ditty нужен доступ к Универсальному доступу, чтобы вставлять за вас";
+"The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility." = "Запись уже в буфере обмена, поэтому вы можете сами нажать ⌘V прямо сейчас.\n\nЧтобы Ditty вставлял автоматически, включите Ditty в Системных настройках → Конфиденциальность и безопасность → Универсальный доступ.";
+"Open System Settings" = "Открыть Системные настройки";
+"Not Now" = "Не сейчас";
+
+/* Окно настроек */
+"Ditty Options" = "Настройки Ditty";
+"General" = "Основные";
+"Supported Types" = "Поддерживаемые типы";
+"Keyboard Shortcuts" = "Сочетания клавиш";
+"Quick Paste" = "Быстрая вставка";
+"About" = "О программе";
+
+/* Вкладка «Основные» */
+"Start Ditty on system startup" = "Запускать Ditty при входе в систему";
+"Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work." = "Ditty не удалось изменить объект входа. Это работает, только если приложение запущено из пакета Ditty.app.";
+"Maximum number of saved copies" = "Максимальное количество сохранённых копий";
+"Paste entries expire after" = "Записи устаревают через";
+"days" = "дн.";
+"Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically." = "Закреплённые записи, записи с пометкой «Никогда не удалять автоматически» и записи внутри групп никогда не удаляются автоматически.";
+"Update clip order on paste" = "Обновлять порядок записей при вставке";
+"Theme:" = "Тема:";
+"Ditto (default)" = "Ditto (по умолчанию)";
+"Dark" = "Тёмная";
+"Language:" = "Язык:";
+"System Default" = "Как в системе";
+"Database:" = "База данных:";
+"Show in Finder" = "Показать в Finder";
+
+/* Вкладка «Поддерживаемые типы» */
+"Ditty saves these kinds of clipboard data:" = "Ditty сохраняет следующие типы данных буфера обмена:";
+"Plain text" = "Обычный текст";
+"Rich text (RTF)" = "Форматированный текст (RTF)";
+"HTML" = "HTML";
+"Images" = "Изображения";
+"Files copied in Finder" = "Файлы, скопированные в Finder";
+"Copies that an app marks as confidential or temporary — password managers do this — are never saved." = "Копии, помеченные программой как конфиденциальные или временные (так делают менеджеры паролей), никогда не сохраняются.";
+
+/* Вкладка «Сочетания клавиш» */
+"Activate Ditty:" = "Вызвать Ditty:";
+"Click the button, then press the new shortcut." = "Нажмите кнопку, затем задайте новое сочетание клавиш.";
+"In the Ditty window:" = "В окне Ditty:";
+"Paste the selected clip" = "Вставить выбранную запись";
+"Paste as plain text" = "Вставить как обычный текст";
+"Paste clip 1 – 10" = "Вставить запись 1 – 10";
+"Move through the list" = "Перемещаться по списку";
+"Delete the selected clips" = "Удалить выбранные записи";
+"Copy to the clipboard without pasting" = "Скопировать в буфер обмена без вставки";
+"Show the full clip" = "Показать запись целиком";
+"New group" = "Новая группа";
+"Clip properties" = "Свойства записи";
+"Leave the current group" = "Выйти из текущей группы";
+"Clear the search, then close" = "Очистить поиск и закрыть";
+
+/* Вкладка «Быстрая вставка» */
+"Lines per row:" = "Строк в записи:";
+"Font size:" = "Размер шрифта:";
+"Transparency:" = "Прозрачность:";
+"Show the window:" = "Показывать окно:";
+"At the text caret" = "У текстового курсора";
+"At the mouse cursor" = "У курсора мыши";
+"At its previous position" = "На прежнем месте";
+"Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor." = "Поиск текстового курсора требует доступа к Универсальному доступу, и не каждая программа его сообщает; тогда Ditty использует курсор мыши.";
+"Always on top (stay open after pasting or clicking elsewhere)" = "Всегда поверх (окно остаётся открытым после вставки или клика в другом месте)";
+"Show thumbnails for copied images" = "Показывать миниатюры скопированных изображений";
+
+/* Вкладка «О программе» */
+"Version %@" = "Версия %@";
+"An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project." = "Неофициальная Mac-версия Ditto — менеджера буфера обмена для Windows от Скотта Брогдена (sabrogden.github.io/Ditto). Проект не связан с оригиналом и не одобрен им.";
+"%lld clips saved." = "Сохранено записей: %lld.";
+
+/* Окно свойств записи */
+"Group Properties" = "Свойства группы";
+"Clip Properties" = "Свойства записи";
+"Date: %@" = "Дата: %@";
+"Last pasted: %@" = "Последняя вставка: %@";
+"Name:" = "Название:";
+"Text:" = "Текст:";
+"Description (this clip has no editable text):" = "Описание (у этой записи нет редактируемого текста):";
+"Quick paste text:" = "Текст быстрой вставки:";
+"Extra text to find this clip by when searching" = "Дополнительный текст для поиска этой записи";
+"Never auto delete" = "Никогда не удалять автоматически";
+"Group:" = "Группа:";
+"Main List" = "Главный список";
+"Saved formats: %@" = "Сохранённые форматы: %@";
+"OK" = "OK";
+"Image (PNG)" = "Изображение (PNG)";
+"Files" = "Файлы";
+
+/* Всплывающее окно быстрой вставки */
+"Search" = "Поиск";
+"Search  ·  %@" = "Поиск  ·  %@";
+"New Group" = "Новая группа";
+"Group name:" = "Название группы:";
+"All Clips" = "Все записи";
+"New Group…" = "Новая группа…";
+"New Group From Selection…" = "Новая группа из выбранных…";
+"Move to Group" = "Переместить в группу";
+"View Group" = "Показать группу";
+"Paste Special" = "Специальная вставка";
+"Plain Text Only" = "Только обычный текст";
+"UPPER CASE" = "ВЕРХНИЙ РЕГИСТР";
+"lower case" = "нижний регистр";
+"Capitalize" = "Каждое слово с заглавной";
+"Sentence case" = "Предложение с заглавной";
+"Camel Case" = "ВерблюжийРегистр";
+"Slugify" = "Слаг";
+"Remove Line Feeds" = "Убрать переводы строк";
+"Paste + One Line Feed" = "Вставить + один перевод строки";
+"Paste + Two Line Feeds" = "Вставить + два перевода строки";
+"Trim White Space" = "Обрезать пробелы";
+"Add Current Time" = "Добавить текущее время";
+"Typoglycemia" = "Типогликемия";
+"Copy to Clipboard" = "Скопировать в буфер обмена";
+"Groups" = "Группы";
+"Clip Order" = "Порядок записей";
+"Move to Top" = "Переместить наверх";
+"Make Top Sticky Clip" = "Закрепить сверху";
+"Make Last Sticky Clip" = "Закрепить снизу";
+"Remove Sticky Setting" = "Снять закрепление";
+"Never Auto Delete" = "Никогда не удалять автоматически";
+"View Full Description" = "Показать полное описание";
+"Properties…" = "Свойства…";
+"Delete Clip" = "Удалить запись";
+"Quick Options" = "Быстрые настройки";
+"Lines Per Row" = "Строк в записи";
+"Font Size" = "Размер шрифта";
+"None" = "Нет";
+"Positioning" = "Положение окна";
+"At Caret" = "У текстового курсора";
+"At Cursor" = "У курсора";
+"At Previous Position" = "На прежнем месте";
+"Always on Top" = "Всегда поверх";
+"Show Thumbnails" = "Показывать миниатюры";
+"Dark Theme" = "Тёмная тема";
+
+/* Разное */
+"Image %@" = "Изображение %@";
+"Type shortcut…" = "Задайте сочетание…";
+"Key %lld" = "Клавиша %lld";
+"Space" = "Пробел";

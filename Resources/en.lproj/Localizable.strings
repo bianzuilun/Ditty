@@ -1,0 +1,166 @@
+/* Ditty — English. Keys are the English source strings; every other language maps them 1:1. */
+
+/* Status bar menu */
+"Show Ditty    %@" = "Show Ditty    %@";
+"Options…" = "Options…";
+"Disconnect from Clipboard" = "Disconnect from Clipboard";
+"Connect to Clipboard" = "Connect to Clipboard";
+"Delete All Clips…" = "Delete All Clips…";
+"Exit" = "Exit";
+
+/* App and Edit menu */
+"Quit Ditty" = "Quit Ditty";
+"Edit" = "Edit";
+"Undo" = "Undo";
+"Redo" = "Redo";
+"Cut" = "Cut";
+"Copy" = "Copy";
+"Paste" = "Paste";
+"Select All" = "Select All";
+
+/* Alerts */
+"Delete all clips?" = "Delete all clips?";
+"This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone." = "This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone.";
+"Delete" = "Delete";
+"Cancel" = "Cancel";
+"Ditty needs the Accessibility permission to paste for you" = "Ditty needs the Accessibility permission to paste for you";
+"The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility." = "The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility.";
+"Open System Settings" = "Open System Settings";
+"Not Now" = "Not Now";
+
+/* Options window */
+"Ditty Options" = "Ditty Options";
+"General" = "General";
+"Supported Types" = "Supported Types";
+"Keyboard Shortcuts" = "Keyboard Shortcuts";
+"Quick Paste" = "Quick Paste";
+"About" = "About";
+
+/* General tab */
+"Start Ditty on system startup" = "Start Ditty on system startup";
+"Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work." = "Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work.";
+"Maximum number of saved copies" = "Maximum number of saved copies";
+"Paste entries expire after" = "Paste entries expire after";
+"days" = "days";
+"Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically." = "Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically.";
+"Update clip order on paste" = "Update clip order on paste";
+"Theme:" = "Theme:";
+"Ditto (default)" = "Ditto (default)";
+"Dark" = "Dark";
+"Language:" = "Language:";
+"System Default" = "System Default";
+"Database:" = "Database:";
+"Show in Finder" = "Show in Finder";
+
+/* Supported Types tab */
+"Ditty saves these kinds of clipboard data:" = "Ditty saves these kinds of clipboard data:";
+"Plain text" = "Plain text";
+"Rich text (RTF)" = "Rich text (RTF)";
+"HTML" = "HTML";
+"Images" = "Images";
+"Files copied in Finder" = "Files copied in Finder";
+"Copies that an app marks as confidential or temporary — password managers do this — are never saved." = "Copies that an app marks as confidential or temporary — password managers do this — are never saved.";
+
+/* Keyboard Shortcuts tab */
+"Activate Ditty:" = "Activate Ditty:";
+"Click the button, then press the new shortcut." = "Click the button, then press the new shortcut.";
+"In the Ditty window:" = "In the Ditty window:";
+"Paste the selected clip" = "Paste the selected clip";
+"Paste as plain text" = "Paste as plain text";
+"Paste clip 1 – 10" = "Paste clip 1 – 10";
+"Move through the list" = "Move through the list";
+"Delete the selected clips" = "Delete the selected clips";
+"Copy to the clipboard without pasting" = "Copy to the clipboard without pasting";
+"Show the full clip" = "Show the full clip";
+"New group" = "New group";
+"Clip properties" = "Clip properties";
+"Leave the current group" = "Leave the current group";
+"Clear the search, then close" = "Clear the search, then close";
+
+/* Quick Paste tab */
+"Lines per row:" = "Lines per row:";
+"Font size:" = "Font size:";
+"Transparency:" = "Transparency:";
+"Show the window:" = "Show the window:";
+"At the text caret" = "At the text caret";
+"At the mouse cursor" = "At the mouse cursor";
+"At its previous position" = "At its previous position";
+"Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor." = "Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor.";
+"Always on top (stay open after pasting or clicking elsewhere)" = "Always on top (stay open after pasting or clicking elsewhere)";
+"Show thumbnails for copied images" = "Show thumbnails for copied images";
+
+/* About tab */
+"Version %@" = "Version %@";
+"An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project." = "An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project.";
+"%lld clips saved." = "%lld clips saved.";
+
+/* Clip properties window */
+"Group Properties" = "Group Properties";
+"Clip Properties" = "Clip Properties";
+"Date: %@" = "Date: %@";
+"Last pasted: %@" = "Last pasted: %@";
+"Name:" = "Name:";
+"Text:" = "Text:";
+"Description (this clip has no editable text):" = "Description (this clip has no editable text):";
+"Quick paste text:" = "Quick paste text:";
+"Extra text to find this clip by when searching" = "Extra text to find this clip by when searching";
+"Never auto delete" = "Never auto delete";
+"Group:" = "Group:";
+"Main List" = "Main List";
+"Saved formats: %@" = "Saved formats: %@";
+"OK" = "OK";
+"Image (PNG)" = "Image (PNG)";
+"Files" = "Files";
+
+/* Quick paste popup */
+"Search" = "Search";
+"Search  ·  %@" = "Search  ·  %@";
+"New Group" = "New Group";
+"Group name:" = "Group name:";
+"All Clips" = "All Clips";
+"New Group…" = "New Group…";
+"New Group From Selection…" = "New Group From Selection…";
+"Move to Group" = "Move to Group";
+"View Group" = "View Group";
+"Paste Special" = "Paste Special";
+"Plain Text Only" = "Plain Text Only";
+"UPPER CASE" = "UPPER CASE";
+"lower case" = "lower case";
+"Capitalize" = "Capitalize";
+"Sentence case" = "Sentence case";
+"Camel Case" = "Camel Case";
+"Slugify" = "Slugify";
+"Remove Line Feeds" = "Remove Line Feeds";
+"Paste + One Line Feed" = "Paste + One Line Feed";
+"Paste + Two Line Feeds" = "Paste + Two Line Feeds";
+"Trim White Space" = "Trim White Space";
+"Add Current Time" = "Add Current Time";
+"Typoglycemia" = "Typoglycemia";
+"Copy to Clipboard" = "Copy to Clipboard";
+"Groups" = "Groups";
+"Clip Order" = "Clip Order";
+"Move to Top" = "Move to Top";
+"Make Top Sticky Clip" = "Make Top Sticky Clip";
+"Make Last Sticky Clip" = "Make Last Sticky Clip";
+"Remove Sticky Setting" = "Remove Sticky Setting";
+"Never Auto Delete" = "Never Auto Delete";
+"View Full Description" = "View Full Description";
+"Properties…" = "Properties…";
+"Delete Clip" = "Delete Clip";
+"Quick Options" = "Quick Options";
+"Lines Per Row" = "Lines Per Row";
+"Font Size" = "Font Size";
+"None" = "None";
+"Positioning" = "Positioning";
+"At Caret" = "At Caret";
+"At Cursor" = "At Cursor";
+"At Previous Position" = "At Previous Position";
+"Always on Top" = "Always on Top";
+"Show Thumbnails" = "Show Thumbnails";
+"Dark Theme" = "Dark Theme";
+
+/* Misc */
+"Image %@" = "Image %@";
+"Type shortcut…" = "Type shortcut…";
+"Key %lld" = "Key %lld";
+"Space" = "Space";

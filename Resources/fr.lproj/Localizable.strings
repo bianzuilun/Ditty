@@ -1,0 +1,166 @@
+/* Ditty — Français */
+
+/* Menu de la barre des menus */
+"Show Ditty    %@" = "Afficher Ditty    %@";
+"Options…" = "Réglages…";
+"Disconnect from Clipboard" = "Ne plus surveiller le presse-papiers";
+"Connect to Clipboard" = "Surveiller le presse-papiers";
+"Delete All Clips…" = "Supprimer tous les clips…";
+"Exit" = "Quitter";
+
+/* Menus application et Édition */
+"Quit Ditty" = "Quitter Ditty";
+"Edit" = "Édition";
+"Undo" = "Annuler";
+"Redo" = "Rétablir";
+"Cut" = "Couper";
+"Copy" = "Copier";
+"Paste" = "Coller";
+"Select All" = "Tout sélectionner";
+
+/* Alertes */
+"Delete all clips?" = "Supprimer tous les clips ?";
+"This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone." = "Cette action supprime toutes les copies enregistrées, sauf les clips épinglés, ceux marqués « Ne jamais supprimer automatiquement » et ceux placés dans des groupes. Elle est irréversible.";
+"Delete" = "Supprimer";
+"Cancel" = "Annuler";
+"Ditty needs the Accessibility permission to paste for you" = "Ditty a besoin de l’autorisation Accessibilité pour coller à ta place";
+"The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility." = "Le clip est déjà dans ton presse-papiers, tu peux donc appuyer toi-même sur ⌘V dès maintenant.\n\nPour que Ditty colle automatiquement, active Ditty dans Réglages Système → Confidentialité et sécurité → Accessibilité.";
+"Open System Settings" = "Ouvrir les Réglages Système";
+"Not Now" = "Pas maintenant";
+
+/* Fenêtre de réglages */
+"Ditty Options" = "Réglages de Ditty";
+"General" = "Général";
+"Supported Types" = "Types pris en charge";
+"Keyboard Shortcuts" = "Raccourcis clavier";
+"Quick Paste" = "Collage rapide";
+"About" = "À propos";
+
+/* Onglet Général */
+"Start Ditty on system startup" = "Lancer Ditty au démarrage du système";
+"Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work." = "Ditty n’a pas pu modifier son élément d’ouverture de session. Pour que cela fonctionne, l’app doit être lancée depuis le paquet Ditty.app.";
+"Maximum number of saved copies" = "Nombre maximal de copies enregistrées";
+"Paste entries expire after" = "Les clips expirent après";
+"days" = "jours";
+"Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically." = "Les clips épinglés, ceux marqués « Ne jamais supprimer automatiquement » et ceux placés dans des groupes ne sont jamais supprimés automatiquement.";
+"Update clip order on paste" = "Mettre à jour l’ordre des clips au collage";
+"Theme:" = "Thème :";
+"Ditto (default)" = "Ditto (par défaut)";
+"Dark" = "Sombre";
+"Language:" = "Langue :";
+"System Default" = "Réglage du système";
+"Database:" = "Base de données :";
+"Show in Finder" = "Afficher dans le Finder";
+
+/* Onglet Types pris en charge */
+"Ditty saves these kinds of clipboard data:" = "Ditty enregistre ces types de données du presse-papiers :";
+"Plain text" = "Texte brut";
+"Rich text (RTF)" = "Texte enrichi (RTF)";
+"HTML" = "HTML";
+"Images" = "Images";
+"Files copied in Finder" = "Fichiers copiés dans le Finder";
+"Copies that an app marks as confidential or temporary — password managers do this — are never saved." = "Les copies marquées comme confidentielles ou temporaires par une app — c’est le cas des gestionnaires de mots de passe — ne sont jamais enregistrées.";
+
+/* Onglet Raccourcis clavier */
+"Activate Ditty:" = "Activer Ditty :";
+"Click the button, then press the new shortcut." = "Clique sur le bouton, puis appuie sur le nouveau raccourci.";
+"In the Ditty window:" = "Dans la fenêtre de Ditty :";
+"Paste the selected clip" = "Coller le clip sélectionné";
+"Paste as plain text" = "Coller en texte brut";
+"Paste clip 1 – 10" = "Coller le clip 1 – 10";
+"Move through the list" = "Se déplacer dans la liste";
+"Delete the selected clips" = "Supprimer les clips sélectionnés";
+"Copy to the clipboard without pasting" = "Copier dans le presse-papiers sans coller";
+"Show the full clip" = "Afficher le clip complet";
+"New group" = "Nouveau groupe";
+"Clip properties" = "Propriétés du clip";
+"Leave the current group" = "Quitter le groupe actuel";
+"Clear the search, then close" = "Effacer la recherche, puis fermer";
+
+/* Onglet Collage rapide */
+"Lines per row:" = "Lignes par rangée :";
+"Font size:" = "Taille de police :";
+"Transparency:" = "Transparence :";
+"Show the window:" = "Afficher la fenêtre :";
+"At the text caret" = "Au point d’insertion";
+"At the mouse cursor" = "Au curseur de la souris";
+"At its previous position" = "À sa position précédente";
+"Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor." = "Trouver le point d’insertion nécessite l’autorisation Accessibilité, et toutes les apps ne le signalent pas ; Ditty utilise alors le curseur de la souris.";
+"Always on top (stay open after pasting or clicking elsewhere)" = "Toujours au premier plan (reste ouverte après un collage ou un clic ailleurs)";
+"Show thumbnails for copied images" = "Afficher les vignettes des images copiées";
+
+/* Onglet À propos */
+"Version %@" = "Version %@";
+"An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project." = "Version Mac non officielle de Ditto, le gestionnaire de presse-papiers Windows de Scott Brogden (sabrogden.github.io/Ditto). Ce projet n’est ni affilié au projet original ni approuvé par lui.";
+"%lld clips saved." = "%lld clips enregistrés.";
+
+/* Fenêtre de propriétés du clip */
+"Group Properties" = "Propriétés du groupe";
+"Clip Properties" = "Propriétés du clip";
+"Date: %@" = "Date : %@";
+"Last pasted: %@" = "Dernier collage : %@";
+"Name:" = "Nom :";
+"Text:" = "Texte :";
+"Description (this clip has no editable text):" = "Description (ce clip n’a pas de texte modifiable) :";
+"Quick paste text:" = "Texte de collage rapide :";
+"Extra text to find this clip by when searching" = "Texte supplémentaire pour retrouver ce clip lors d’une recherche";
+"Never auto delete" = "Ne jamais supprimer automatiquement";
+"Group:" = "Groupe :";
+"Main List" = "Liste principale";
+"Saved formats: %@" = "Formats enregistrés : %@";
+"OK" = "OK";
+"Image (PNG)" = "Image (PNG)";
+"Files" = "Fichiers";
+
+/* Fenêtre contextuelle de collage rapide */
+"Search" = "Rechercher";
+"Search  ·  %@" = "Rechercher  ·  %@";
+"New Group" = "Nouveau groupe";
+"Group name:" = "Nom du groupe :";
+"All Clips" = "Tous les clips";
+"New Group…" = "Nouveau groupe…";
+"New Group From Selection…" = "Nouveau groupe à partir de la sélection…";
+"Move to Group" = "Déplacer vers le groupe";
+"View Group" = "Voir le groupe";
+"Paste Special" = "Collage spécial";
+"Plain Text Only" = "Texte brut uniquement";
+"UPPER CASE" = "MAJUSCULES";
+"lower case" = "minuscules";
+"Capitalize" = "Capitaliser";
+"Sentence case" = "Début de phrase en majuscule";
+"Camel Case" = "CamelCase";
+"Slugify" = "Slugifier";
+"Remove Line Feeds" = "Supprimer les sauts de ligne";
+"Paste + One Line Feed" = "Coller + un saut de ligne";
+"Paste + Two Line Feeds" = "Coller + deux sauts de ligne";
+"Trim White Space" = "Supprimer les espaces";
+"Add Current Time" = "Ajouter l’heure actuelle";
+"Typoglycemia" = "Typoglycémie";
+"Copy to Clipboard" = "Copier dans le presse-papiers";
+"Groups" = "Groupes";
+"Clip Order" = "Ordre des clips";
+"Move to Top" = "Placer tout en haut";
+"Make Top Sticky Clip" = "Épingler en haut";
+"Make Last Sticky Clip" = "Épingler en bas";
+"Remove Sticky Setting" = "Retirer l’épingle";
+"Never Auto Delete" = "Ne jamais supprimer automatiquement";
+"View Full Description" = "Voir la description complète";
+"Properties…" = "Propriétés…";
+"Delete Clip" = "Supprimer le clip";
+"Quick Options" = "Options rapides";
+"Lines Per Row" = "Lignes par rangée";
+"Font Size" = "Taille de police";
+"None" = "Aucune";
+"Positioning" = "Positionnement";
+"At Caret" = "Au point d’insertion";
+"At Cursor" = "Au curseur";
+"At Previous Position" = "À la position précédente";
+"Always on Top" = "Toujours au premier plan";
+"Show Thumbnails" = "Afficher les vignettes";
+"Dark Theme" = "Thème sombre";
+
+/* Divers */
+"Image %@" = "Image %@";
+"Type shortcut…" = "Tape le raccourci…";
+"Key %lld" = "Touche %lld";
+"Space" = "Espace";

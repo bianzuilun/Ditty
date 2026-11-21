@@ -28,6 +28,10 @@ rm -rf "$APP" build/AppIcon.iconset
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources" build/AppIcon.iconset
 cp "$BIN" "$APP/Contents/MacOS/Ditty"
 cp Info.plist "$APP/Contents/Info.plist"
+# Interface languages: every .lproj under Resources/ becomes visible to macOS in the bundle.
+for lproj in Resources/*.lproj; do
+    [[ -e "$lproj" ]] && cp -R "$lproj" "$APP/Contents/Resources/"
+done
 
 "$BIN" --make-icon build/icon_1024.png
 for size in 16 32 128 256 512; do

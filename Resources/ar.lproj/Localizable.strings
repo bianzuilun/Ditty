@@ -1,0 +1,166 @@
+/* Ditty — العربية */
+
+/* قائمة شريط الحالة */
+"Show Ditty    %@" = "إظهار Ditty    %@";
+"Options…" = "الخيارات…";
+"Disconnect from Clipboard" = "قطع الاتصال بلوحة القص";
+"Connect to Clipboard" = "الاتصال بلوحة القص";
+"Delete All Clips…" = "حذف جميع المقاطع…";
+"Exit" = "خروج";
+
+/* قائمة التطبيق وقائمة التحرير */
+"Quit Ditty" = "إنهاء Ditty";
+"Edit" = "تحرير";
+"Undo" = "تراجع";
+"Redo" = "إعادة";
+"Cut" = "قص";
+"Copy" = "نسخ";
+"Paste" = "لصق";
+"Select All" = "تحديد الكل";
+
+/* التنبيهات */
+"Delete all clips?" = "حذف جميع المقاطع؟";
+"This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone." = "سيؤدي هذا إلى إزالة كل النسخ المحفوظة ما عدا المقاطع المثبَّتة والمقاطع المعلَّمة بـ«عدم الحذف التلقائي أبدًا» والمقاطع الموجودة داخل المجموعات. لا يمكن التراجع عن هذا الإجراء.";
+"Delete" = "حذف";
+"Cancel" = "إلغاء";
+"Ditty needs the Accessibility permission to paste for you" = "يحتاج Ditty إلى إذن إمكانية الاستخدام حتى يلصق نيابةً عنك";
+"The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility." = "المقطع موجود بالفعل في لوحة القص، فيمكنك الضغط على ⌘V بنفسك الآن.\n\nللسماح لـ Ditty باللصق تلقائيًا، فعِّل Ditty في إعدادات النظام ← الخصوصية والأمان ← إمكانية الاستخدام.";
+"Open System Settings" = "فتح إعدادات النظام";
+"Not Now" = "ليس الآن";
+
+/* نافذة الخيارات */
+"Ditty Options" = "خيارات Ditty";
+"General" = "عام";
+"Supported Types" = "الأنواع المدعومة";
+"Keyboard Shortcuts" = "اختصارات لوحة المفاتيح";
+"Quick Paste" = "اللصق السريع";
+"About" = "حول";
+
+/* تبويب عام */
+"Start Ditty on system startup" = "بدء Ditty عند تشغيل النظام";
+"Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work." = "تعذّر على Ditty تغيير عنصر تسجيل الدخول. لكي يعمل هذا، يجب تشغيل التطبيق من حزمة Ditty.app.";
+"Maximum number of saved copies" = "الحد الأقصى لعدد النسخ المحفوظة";
+"Paste entries expire after" = "تنتهي صلاحية المقاطع بعد";
+"days" = "أيام";
+"Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically." = "لا تُزال المقاطع المثبَّتة والمقاطع المعلَّمة بـ«عدم الحذف التلقائي أبدًا» والمقاطع داخل المجموعات تلقائيًا أبدًا.";
+"Update clip order on paste" = "تحديث ترتيب المقاطع عند اللصق";
+"Theme:" = "المظهر:";
+"Ditto (default)" = "Ditto (الافتراضي)";
+"Dark" = "داكن";
+"Language:" = "اللغة:";
+"System Default" = "لغة النظام";
+"Database:" = "قاعدة البيانات:";
+"Show in Finder" = "إظهار في Finder";
+
+/* تبويب الأنواع المدعومة */
+"Ditty saves these kinds of clipboard data:" = "يحفظ Ditty أنواع بيانات لوحة القص هذه:";
+"Plain text" = "نص عادي";
+"Rich text (RTF)" = "نص منسّق (RTF)";
+"HTML" = "HTML";
+"Images" = "الصور";
+"Files copied in Finder" = "الملفات المنسوخة في Finder";
+"Copies that an app marks as confidential or temporary — password managers do this — are never saved." = "النسخ التي تعلّمها أحد التطبيقات كسرية أو مؤقتة — مثل مديري كلمات السر — لا تُحفظ أبدًا.";
+
+/* تبويب اختصارات لوحة المفاتيح */
+"Activate Ditty:" = "تنشيط Ditty:";
+"Click the button, then press the new shortcut." = "انقر الزر ثم اضغط الاختصار الجديد.";
+"In the Ditty window:" = "داخل نافذة Ditty:";
+"Paste the selected clip" = "لصق المقطع المحدد";
+"Paste as plain text" = "لصق كنص عادي";
+"Paste clip 1 – 10" = "لصق المقطع 1 – 10";
+"Move through the list" = "التنقل في القائمة";
+"Delete the selected clips" = "حذف المقاطع المحددة";
+"Copy to the clipboard without pasting" = "النسخ إلى لوحة القص دون لصق";
+"Show the full clip" = "إظهار المقطع كاملًا";
+"New group" = "مجموعة جديدة";
+"Clip properties" = "خصائص المقطع";
+"Leave the current group" = "مغادرة المجموعة الحالية";
+"Clear the search, then close" = "مسح البحث ثم الإغلاق";
+
+/* تبويب اللصق السريع */
+"Lines per row:" = "الأسطر لكل صف:";
+"Font size:" = "حجم الخط:";
+"Transparency:" = "الشفافية:";
+"Show the window:" = "إظهار النافذة:";
+"At the text caret" = "عند مؤشر النص";
+"At the mouse cursor" = "عند مؤشر الفأرة";
+"At its previous position" = "في موضعه السابق";
+"Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor." = "يتطلب العثور على مؤشر النص إذن إمكانية الاستخدام، وليس كل تطبيق يبلّغ عنه؛ عندها يستخدم Ditty مؤشر الفأرة.";
+"Always on top (stay open after pasting or clicking elsewhere)" = "دائمًا في المقدمة (تبقى مفتوحة بعد اللصق أو النقر في مكان آخر)";
+"Show thumbnails for copied images" = "إظهار صور مصغّرة للصور المنسوخة";
+
+/* تبويب حول */
+"Version %@" = "الإصدار %@";
+"An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project." = "نسخة Mac غير رسمية من Ditto، مدير لوحة القص في Windows من إعداد سكوت بروغدن (sabrogden.github.io/Ditto). لا ترتبط هذا المشروع بالمشروع الأصلي ولا يحظى بتأييده.";
+"%lld clips saved." = "تم حفظ %lld مقطعًا.";
+
+/* نافذة خصائص المقطع */
+"Group Properties" = "خصائص المجموعة";
+"Clip Properties" = "خصائص المقطع";
+"Date: %@" = "التاريخ: %@";
+"Last pasted: %@" = "آخر لصق: %@";
+"Name:" = "الاسم:";
+"Text:" = "النص:";
+"Description (this clip has no editable text):" = "الوصف (لا يحتوي هذا المقطع على نص قابل للتحرير):";
+"Quick paste text:" = "نص اللصق السريع:";
+"Extra text to find this clip by when searching" = "نص إضافي للعثور على هذا المقطع عند البحث";
+"Never auto delete" = "عدم الحذف التلقائي أبدًا";
+"Group:" = "المجموعة:";
+"Main List" = "القائمة الرئيسية";
+"Saved formats: %@" = "الصيغ المحفوظة: %@";
+"OK" = "حسنًا";
+"Image (PNG)" = "صورة (PNG)";
+"Files" = "ملفات";
+
+/* نافذة اللصق السريع المنبثقة */
+"Search" = "بحث";
+"Search  ·  %@" = "بحث  ·  %@";
+"New Group" = "مجموعة جديدة";
+"Group name:" = "اسم المجموعة:";
+"All Clips" = "كل المقاطع";
+"New Group…" = "مجموعة جديدة…";
+"New Group From Selection…" = "مجموعة جديدة من المحدد…";
+"Move to Group" = "نقل إلى مجموعة";
+"View Group" = "عرض المجموعة";
+"Paste Special" = "لصق خاص";
+"Plain Text Only" = "نص عادي فقط";
+"UPPER CASE" = "أحرف كبيرة";
+"lower case" = "أحرف صغيرة";
+"Capitalize" = "بدء الأحرف بالكبير";
+"Sentence case" = "حالة الجملة";
+"Camel Case" = "حالة الجمل (Camel)";
+"Slugify" = "تحويل إلى سلاق";
+"Remove Line Feeds" = "إزالة فواصل الأسطر";
+"Paste + One Line Feed" = "لصق + فاصل سطر واحد";
+"Paste + Two Line Feeds" = "لصق + فاصلا سطرين";
+"Trim White Space" = "إزالة الفراغات";
+"Add Current Time" = "إضافة الوقت الحالي";
+"Typoglycemia" = "تايبوغليسيميا";
+"Copy to Clipboard" = "نسخ إلى لوحة القص";
+"Groups" = "المجموعات";
+"Clip Order" = "ترتيب المقاطع";
+"Move to Top" = "نقل إلى الأعلى";
+"Make Top Sticky Clip" = "تثبيت في الأعلى";
+"Make Last Sticky Clip" = "تثبيت في الأسفل";
+"Remove Sticky Setting" = "إزالة التثبيت";
+"Never Auto Delete" = "عدم الحذف التلقائي أبدًا";
+"View Full Description" = "عرض الوصف الكامل";
+"Properties…" = "الخصائص…";
+"Delete Clip" = "حذف المقطع";
+"Quick Options" = "خيارات سريعة";
+"Lines Per Row" = "الأسطر لكل صف";
+"Font Size" = "حجم الخط";
+"None" = "بلا";
+"Positioning" = "الموضع";
+"At Caret" = "عند مؤشر النص";
+"At Cursor" = "عند المؤشر";
+"At Previous Position" = "في الموضع السابق";
+"Always on Top" = "دائمًا في المقدمة";
+"Show Thumbnails" = "إظهار الصور المصغّرة";
+"Dark Theme" = "مظهر داكن";
+
+/* متنوعة */
+"Image %@" = "صورة %@";
+"Type shortcut…" = "اضغط الاختصار…";
+"Key %lld" = "مفتاح %lld";
+"Space" = "مسافة";

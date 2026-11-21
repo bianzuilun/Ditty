@@ -1,0 +1,166 @@
+/* Ditty — 한국어 */
+
+/* 상태 막대 메뉴 */
+"Show Ditty    %@" = "Ditty 보기    %@";
+"Options…" = "옵션…";
+"Disconnect from Clipboard" = "클립보드 감시 중지";
+"Connect to Clipboard" = "클립보드 감시 시작";
+"Delete All Clips…" = "모든 클립 지우기…";
+"Exit" = "종료";
+
+/* 앱 메뉴 및 편집 메뉴 */
+"Quit Ditty" = "Ditty 종료";
+"Edit" = "편집";
+"Undo" = "실행 취소";
+"Redo" = "다시 실행";
+"Cut" = "오려두기";
+"Copy" = "복사하기";
+"Paste" = "붙여넣기";
+"Select All" = "모두 선택";
+
+/* 알림 */
+"Delete all clips?" = "모든 클립을 지울까요?";
+"This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone." = "저장된 모든 사본이 지워집니다. 다만 고정된 클립, '자동 삭제 안 함'으로 표시된 클립, 그룹 안의 클립은 삭제되지 않습니다. 이 작업은 되돌릴 수 없습니다.";
+"Delete" = "지우기";
+"Cancel" = "취소";
+"Ditty needs the Accessibility permission to paste for you" = "Ditty가 자동으로 붙여넣으려면 '손쉬운 사용' 권한이 필요합니다";
+"The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility." = "클립이 이미 클립보드에 있으므로 지금 바로 ⌘V를 눌러 직접 붙여넣을 수 있습니다.\n\nDitty가 자동으로 붙여넣게 하려면 시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용에서 Ditty를 켜세요.";
+"Open System Settings" = "시스템 설정 열기";
+"Not Now" = "나중에";
+
+/* 옵션 윈도우 */
+"Ditty Options" = "Ditty 옵션";
+"General" = "일반";
+"Supported Types" = "지원하는 형식";
+"Keyboard Shortcuts" = "키보드 단축키";
+"Quick Paste" = "빠른 붙여넣기";
+"About" = "정보";
+
+/* 일반 탭 */
+"Start Ditty on system startup" = "시스템 시작 시 Ditty 실행";
+"Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work." = "로그인 항목을 변경하지 못했습니다. 이 기능은 Ditty.app 번들에서 실행할 때만 동작합니다.";
+"Maximum number of saved copies" = "저장할 사본의 최대 개수";
+"Paste entries expire after" = "클립 보관 기간";
+"days" = "일";
+"Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically." = "고정된 클립, '자동 삭제 안 함'으로 표시된 클립, 그룹 안의 클립은 자동으로 지워지지 않습니다.";
+"Update clip order on paste" = "붙여넣을 때 클립 순서 갱신";
+"Theme:" = "테마:";
+"Ditto (default)" = "Ditto(기본값)";
+"Dark" = "다크";
+"Language:" = "언어:";
+"System Default" = "시스템 따르기";
+"Database:" = "데이터베이스:";
+"Show in Finder" = "Finder에서 보기";
+
+/* 지원하는 형식 탭 */
+"Ditty saves these kinds of clipboard data:" = "Ditty는 다음 종류의 클립보드 데이터를 저장합니다:";
+"Plain text" = "일반 텍스트";
+"Rich text (RTF)" = "서식 있는 텍스트(RTF)";
+"HTML" = "HTML";
+"Images" = "이미지";
+"Files copied in Finder" = "Finder에서 복사한 파일";
+"Copies that an app marks as confidential or temporary — password managers do this — are never saved." = "앱이 기밀 또는 임시로 표시한 사본(암호 관리자가 그렇게 함)은 저장되지 않습니다.";
+
+/* 키보드 단축키 탭 */
+"Activate Ditty:" = "Ditty 호출:";
+"Click the button, then press the new shortcut." = "버튼을 클릭한 뒤 새 단축키를 누르세요.";
+"In the Ditty window:" = "Ditty 창에서:";
+"Paste the selected clip" = "선택한 클립 붙여넣기";
+"Paste as plain text" = "일반 텍스트로 붙여넣기";
+"Paste clip 1 – 10" = "클립 1 – 10 붙여넣기";
+"Move through the list" = "목록에서 이동";
+"Delete the selected clips" = "선택한 클립 지우기";
+"Copy to the clipboard without pasting" = "붙여넣지 않고 클립보드로만 복사";
+"Show the full clip" = "전체 클립 보기";
+"New group" = "새 그룹";
+"Clip properties" = "클립 정보";
+"Leave the current group" = "현재 그룹 나가기";
+"Clear the search, then close" = "검색 지운 뒤 닫기";
+
+/* 빠른 붙여넣기 탭 */
+"Lines per row:" = "행당 줄 수:";
+"Font size:" = "글자 크기:";
+"Transparency:" = "불투명도:";
+"Show the window:" = "창 표시 위치:";
+"At the text caret" = "텍스트 캐럿 위치";
+"At the mouse cursor" = "마우스 커서 위치";
+"At its previous position" = "이전 위치";
+"Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor." = "캐럿 위치를 찾으려면 '손쉬운 사용' 권한이 필요하며, 모든 앱이 위치를 알려주는 것은 아닙니다. 이 경우 Ditty는 마우스 커서 위치로 대체합니다.";
+"Always on top (stay open after pasting or clicking elsewhere)" = "항상 위에 표시(붙여넣거나 다른 곳을 클릭해도 열어 둠)";
+"Show thumbnails for copied images" = "복사한 이미지 썸네일 표시";
+
+/* 정보 탭 */
+"Version %@" = "버전 %@";
+"An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project." = "Scott Brogden이 만든 Windows 클립보드 관리자 Ditto(sabrogden.github.io/Ditto)의 비공식 Mac 버전입니다. 이 프로젝트는 원본 프로젝트와 제휴하거나 승인받지 않았습니다.";
+"%lld clips saved." = "클립 %lld개 저장됨.";
+
+/* 클립 정보 윈도우 */
+"Group Properties" = "그룹 정보";
+"Clip Properties" = "클립 정보";
+"Date: %@" = "날짜: %@";
+"Last pasted: %@" = "마지막 붙여넣기: %@";
+"Name:" = "이름:";
+"Text:" = "텍스트:";
+"Description (this clip has no editable text):" = "설명(이 클립에는 편집 가능한 텍스트가 없음):";
+"Quick paste text:" = "빠른 붙여넣기 키워드:";
+"Extra text to find this clip by when searching" = "검색 시 이 클립을 찾기 위한 추가 텍스트";
+"Never auto delete" = "자동 삭제 안 함";
+"Group:" = "그룹:";
+"Main List" = "메인 목록";
+"Saved formats: %@" = "저장된 형식: %@";
+"OK" = "확인";
+"Image (PNG)" = "이미지(PNG)";
+"Files" = "파일";
+
+/* 빠른 붙여넣기 팝업 */
+"Search" = "검색";
+"Search  ·  %@" = "검색  ·  %@";
+"New Group" = "새 그룹";
+"Group name:" = "그룹 이름:";
+"All Clips" = "모든 클립";
+"New Group…" = "새 그룹…";
+"New Group From Selection…" = "선택 항목으로 새 그룹…";
+"Move to Group" = "그룹으로 이동";
+"View Group" = "그룹 보기";
+"Paste Special" = "특수 붙여넣기";
+"Plain Text Only" = "일반 텍스트만";
+"UPPER CASE" = "대문자";
+"lower case" = "소문자";
+"Capitalize" = "첫 글자 대문자";
+"Sentence case" = "문장 대문자";
+"Camel Case" = "캐멀 케이스";
+"Slugify" = "슬러그화";
+"Remove Line Feeds" = "줄바꿈 제거";
+"Paste + One Line Feed" = "붙여넣기 + 줄바꿈 1개";
+"Paste + Two Line Feeds" = "붙여넣기 + 줄바꿈 2개";
+"Trim White Space" = "앞뒤 공백 제거";
+"Add Current Time" = "현재 시각 추가";
+"Typoglycemia" = "타이포글리세미아";
+"Copy to Clipboard" = "클립보드로 복사";
+"Groups" = "그룹";
+"Clip Order" = "클립 순서";
+"Move to Top" = "맨 위로 이동";
+"Make Top Sticky Clip" = "맨 위에 고정";
+"Make Last Sticky Clip" = "맨 아래에 고정";
+"Remove Sticky Setting" = "고정 해제";
+"Never Auto Delete" = "자동 삭제 안 함";
+"View Full Description" = "전체 내용 보기";
+"Properties…" = "정보…";
+"Delete Clip" = "클립 지우기";
+"Quick Options" = "빠른 옵션";
+"Lines Per Row" = "행당 줄 수";
+"Font Size" = "글자 크기";
+"None" = "없음";
+"Positioning" = "표시 위치";
+"At Caret" = "캐럿 위치";
+"At Cursor" = "커서 위치";
+"At Previous Position" = "이전 위치";
+"Always on Top" = "항상 위에 표시";
+"Show Thumbnails" = "썸네일 표시";
+"Dark Theme" = "다크 테마";
+
+/* 기타 */
+"Image %@" = "이미지 %@";
+"Type shortcut…" = "단축키 입력…";
+"Key %lld" = "키 %lld";
+"Space" = "스페이스";

@@ -60,7 +60,7 @@ final class ClipboardMonitor {
                 formats.append(ClipFormat(type: ClipFormat.png, data: png))
                 if text.isEmpty {
                     let size = NSBitmapImageRep(data: png).map { "\($0.pixelsWide) x \($0.pixelsHigh)" } ?? ""
-                    text = "Image \(size)"
+                    text = L10n.tr("Image %@", size)
                     hashSource = png
                 }
             }

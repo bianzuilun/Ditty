@@ -1,0 +1,166 @@
+/* Ditty — हिन्दी */
+
+/* स्थिति बार मेन्यू */
+"Show Ditty    %@" = "Ditty दिखाएँ    %@";
+"Options…" = "विकल्प…";
+"Disconnect from Clipboard" = "क्लिपबोर्ड से डिस्कनेक्ट करें";
+"Connect to Clipboard" = "क्लिपबोर्ड से कनेक्ट करें";
+"Delete All Clips…" = "सभी क्लिप हटाएँ…";
+"Exit" = "बाहर निकलें";
+
+/* ऐप और संपादन मेन्यू */
+"Quit Ditty" = "Ditty बंद करें";
+"Edit" = "संपादन";
+"Undo" = "पूर्ववत करें";
+"Redo" = "फिर करें";
+"Cut" = "कट करें";
+"Copy" = "कॉपी करें";
+"Paste" = "पेस्ट करें";
+"Select All" = "सभी चुनें";
+
+/* चेतावनियाँ */
+"Delete all clips?" = "सभी क्लिप हटाएँ?";
+"This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone." = "इससे सभी सहेजी गई प्रतियाँ हट जाती हैं, सिवाय पिन की गई क्लिप, “कभी स्वतः न हटाएँ” चिह्नित क्लिप और समूहों के अंदर की क्लिप के। इसे पूर्ववत नहीं किया जा सकता।";
+"Delete" = "हटाएँ";
+"Cancel" = "रद्द करें";
+"Ditty needs the Accessibility permission to paste for you" = "आपकी ओर से पेस्ट करने के लिए Ditty को सहायक पहुँच (Accessibility) अनुमति चाहिए";
+"The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility." = "क्लिप आपके क्लिपबोर्ड पर है, इसलिए आप अभी स्वयं ⌘V दबा सकते हैं।\n\nDitty को स्वतः पेस्ट करने देने के लिए, सिस्टम सेटिंग्स → गोपनीयता और सुरक्षा → सहायक पहुँच में Ditty चालू करें।";
+"Open System Settings" = "सिस्टम सेटिंग्स खोलें";
+"Not Now" = "अभी नहीं";
+
+/* विकल्प विंडो */
+"Ditty Options" = "Ditty विकल्प";
+"General" = "सामान्य";
+"Supported Types" = "समर्थित प्रकार";
+"Keyboard Shortcuts" = "कीबोर्ड शॉर्टकट";
+"Quick Paste" = "त्वरित पेस्ट";
+"About" = "परिचय";
+
+/* सामान्य टैब */
+"Start Ditty on system startup" = "सिस्टम चालू होने पर Ditty चलाएँ";
+"Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work." = "Ditty अपना लॉगिन आइटम नहीं बदल सका। यह काम करने के लिए ऐप को Ditty.app बंडल से चलना ज़रूरी है।";
+"Maximum number of saved copies" = "सहेजी गई प्रतियों की अधिकतम संख्या";
+"Paste entries expire after" = "क्लिप समाप्त हो जाएँ";
+"days" = "दिनों बाद";
+"Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically." = "पिन की गई क्लिप, “कभी स्वतः न हटाएँ” चिह्नित क्लिप और समूहों के अंदर की क्लिप कभी स्वतः नहीं हटाई जातीं।";
+"Update clip order on paste" = "पेस्ट करते समय क्लिप का क्रम अपडेट करें";
+"Theme:" = "थीम:";
+"Ditto (default)" = "Ditto (डिफ़ॉल्ट)";
+"Dark" = "गहरी";
+"Language:" = "भाषा:";
+"System Default" = "सिस्टम के अनुसार";
+"Database:" = "डेटाबेस:";
+"Show in Finder" = "Finder में दिखाएँ";
+
+/* समर्थित प्रकार टैब */
+"Ditty saves these kinds of clipboard data:" = "Ditty इस तरह का क्लिपबोर्ड डेटा सहेजता है:";
+"Plain text" = "सादा टेक्स्ट";
+"Rich text (RTF)" = "समृद्ध टेक्स्ट (RTF)";
+"HTML" = "HTML";
+"Images" = "तस्वीरें";
+"Files copied in Finder" = "Finder में कॉपी की गई फ़ाइलें";
+"Copies that an app marks as confidential or temporary — password managers do this — are never saved." = "जो प्रतियाँ कोई ऐप गोपनीय या अस्थायी चिह्नित करता है — पासवर्ड मैनेजर ऐसा करते हैं — वे कभी सहेजी नहीं जातीं।";
+
+/* कीबोर्ड शॉर्टकट टैब */
+"Activate Ditty:" = "Ditty चालू करें:";
+"Click the button, then press the new shortcut." = "बटन पर क्लिक करें, फिर नया शॉर्टकट दबाएँ।";
+"In the Ditty window:" = "Ditty विंडो में:";
+"Paste the selected clip" = "चुनी गई क्लिप पेस्ट करें";
+"Paste as plain text" = "सादे टेक्स्ट के रूप में पेस्ट करें";
+"Paste clip 1 – 10" = "क्लिप 1 – 10 पेस्ट करें";
+"Move through the list" = "सूची में घूमें";
+"Delete the selected clips" = "चुनी हुई क्लिप हटाएँ";
+"Copy to the clipboard without pasting" = "पेस्ट किए बिना क्लिपबोर्ड पर कॉपी करें";
+"Show the full clip" = "पूरी क्लिप दिखाएँ";
+"New group" = "नया समूह";
+"Clip properties" = "क्लिप विशेषताएँ";
+"Leave the current group" = "वर्तमान समूह छोड़ें";
+"Clear the search, then close" = "खोज साफ़ करके बंद करें";
+
+/* त्वरित पेस्ट टैब */
+"Lines per row:" = "प्रति पंक्ति लाइनें:";
+"Font size:" = "फ़ॉन्ट आकार:";
+"Transparency:" = "पारदर्शिता:";
+"Show the window:" = "विंडो दिखाएँ:";
+"At the text caret" = "टेक्स्ट कर्सर पर";
+"At the mouse cursor" = "माउस कर्सर पर";
+"At its previous position" = "पिछली स्थिति पर";
+"Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor." = "कर्सर ढूँढ़ने के लिए सहायक पहुँच अनुमति चाहिए, और हर ऐप उसकी जानकारी नहीं देता; तब Ditty माउस कर्सर का उपयोग करता है।";
+"Always on top (stay open after pasting or clicking elsewhere)" = "हमेशा ऊपर (पेस्ट या कहीं और क्लिक करने के बाद भी खुला रहे)";
+"Show thumbnails for copied images" = "कॉपी की गई तस्वीरों के थंबनेल दिखाएँ";
+
+/* परिचय टैब */
+"Version %@" = "संस्करण %@";
+"An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project." = "Ditto — स्कॉट ब्रॉगडेन के Windows क्लिपबोर्ड मैनेजर (sabrogden.github.io/Ditto) — का अनधिकृत Mac संस्करण। यह मूल परियोजना से संबद्ध या उसके द्वारा समर्थित नहीं है।";
+"%lld clips saved." = "%lld क्लिप सहेजी गईं।";
+
+/* क्लिप विशेषताएँ विंडो */
+"Group Properties" = "समूह विशेषताएँ";
+"Clip Properties" = "क्लिप विशेषताएँ";
+"Date: %@" = "तारीख़: %@";
+"Last pasted: %@" = "अंतिम पेस्ट: %@";
+"Name:" = "नाम:";
+"Text:" = "टेक्स्ट:";
+"Description (this clip has no editable text):" = "विवरण (इस क्लिप में संपादन योग्य टेक्स्ट नहीं है):";
+"Quick paste text:" = "त्वरित पेस्ट टेक्स्ट:";
+"Extra text to find this clip by when searching" = "खोजते समय यह क्लिप ढूँढ़ने के लिए अतिरिक्त टेक्स्ट";
+"Never auto delete" = "कभी स्वतः न हटाएँ";
+"Group:" = "समूह:";
+"Main List" = "मुख्य सूची";
+"Saved formats: %@" = "सहेजे गए प्रारूप: %@";
+"OK" = "ठीक है";
+"Image (PNG)" = "तस्वीर (PNG)";
+"Files" = "फ़ाइलें";
+
+/* त्वरित पेस्ट पॉपअप */
+"Search" = "खोजें";
+"Search  ·  %@" = "खोजें  ·  %@";
+"New Group" = "नया समूह";
+"Group name:" = "समूह का नाम:";
+"All Clips" = "सभी क्लिप";
+"New Group…" = "नया समूह…";
+"New Group From Selection…" = "चयन से नया समूह…";
+"Move to Group" = "समूह में ले जाएँ";
+"View Group" = "समूह देखें";
+"Paste Special" = "विशेष पेस्ट";
+"Plain Text Only" = "केवल सादा टेक्स्ट";
+"UPPER CASE" = "बड़े अक्षर";
+"lower case" = "छोटे अक्षर";
+"Capitalize" = "अक्षर बड़े करें";
+"Sentence case" = "वाक्य-शैली";
+"Camel Case" = "कैमिल केस";
+"Slugify" = "स्लग बनाएँ";
+"Remove Line Feeds" = "लाइन फ़ीड हटाएँ";
+"Paste + One Line Feed" = "पेस्ट + एक लाइन ब्रेक";
+"Paste + Two Line Feeds" = "पेस्ट + दो लाइन ब्रेक";
+"Trim White Space" = "खाली स्थान हटाएँ";
+"Add Current Time" = "वर्तमान समय जोड़ें";
+"Typoglycemia" = "टाइपोग्लाइसीमिया";
+"Copy to Clipboard" = "क्लिपबोर्ड पर कॉपी करें";
+"Groups" = "समूह";
+"Clip Order" = "क्लिप क्रम";
+"Move to Top" = "सबसे ऊपर ले जाएँ";
+"Make Top Sticky Clip" = "ऊपर पिन करें";
+"Make Last Sticky Clip" = "नीचे पिन करें";
+"Remove Sticky Setting" = "पिन हटाएँ";
+"Never Auto Delete" = "कभी स्वतः न हटाएँ";
+"View Full Description" = "पूरा विवरण देखें";
+"Properties…" = "विशेषताएँ…";
+"Delete Clip" = "क्लिप हटाएँ";
+"Quick Options" = "त्वरित विकल्प";
+"Lines Per Row" = "प्रति पंक्ति लाइनें";
+"Font Size" = "फ़ॉन्ट आकार";
+"None" = "कोई नहीं";
+"Positioning" = "स्थिति";
+"At Caret" = "कर्सर पर";
+"At Cursor" = "पॉइंटर पर";
+"At Previous Position" = "पिछली स्थिति पर";
+"Always on Top" = "हमेशा ऊपर";
+"Show Thumbnails" = "थंबनेल दिखाएँ";
+"Dark Theme" = "गहरी थीम";
+
+/* अन्य */
+"Image %@" = "तस्वीर %@";
+"Type shortcut…" = "शॉर्टकट दबाएँ…";
+"Key %lld" = "कुंजी %lld";
+"Space" = "स्पेस";

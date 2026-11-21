@@ -21,6 +21,7 @@ Ditty is not affiliated with or endorsed by Ditto or its author, Scott Brogden. 
 - Clip properties, including editing a clip's text
 - Keeps the last 500 copies by default, with optional expiry in days
 - Skips copies that password managers mark as confidential
+- Interface in 15 languages (see below), chosen automatically from your system language
 - Everything stays on your Mac, in a SQLite database under `~/Library/Application Support/Ditty`
 
 Not here yet, compared with Ditto: network sync ("Friends"), import/export (including importing a Ditto database), per-clip global hotkeys, and the clip compare tool.
@@ -82,6 +83,16 @@ macOS ties this permission to the exact build, so you have to turn it on again a
 | `⎋` | Clear the search, then close |
 
 Right-click a clip, or click `···`, for everything else. Click the menu bar icon to open Ditty; right-click it for Options and Exit.
+
+## Interface languages
+
+Ditty speaks 15 languages, listed in Options → General → Language with their native names:
+
+English · 简体中文 · हिन्दी · Español · Français · العربية · বাংলা · Português · Русский · اردو · Bahasa Indonesia · Deutsch · 繁體中文 · 日本語 · 한국어
+
+- **By default Ditty follows your system language** ("System Default"): macOS picks the best match among the bundled translations every launch. Selecting a language in Options pins it.
+- Arabic and Urdu switch the interface to right-to-left layout automatically.
+- Translations live in `Resources/<code>.lproj/Localizable.strings`, one table per language; English strings double as the lookup keys, so a missing entry falls back to English. After adding or editing a language, run `python3 scripts/validate_l10n.py` to check keys and printf-style placeholders against English.
 
 ## Support
 

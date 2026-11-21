@@ -200,8 +200,8 @@ final class QuickPasteController: NSObject, NSTableViewDataSource, NSTableViewDe
     }
 
     private func updateSearchBox() {
-        var placeholder = "Search"
-        if currentGroup != Database.rootID, let group = db.clip(currentGroup) { placeholder = "Search  ·  \(group.text)" }
+        var placeholder = L10n.tr("Search")
+        if currentGroup != Database.rootID, let group = db.clip(currentGroup) { placeholder = L10n.tr("Search  ·  %@", group.text) }
         chrome.searchBox.applyTheme(placeholder: placeholder)
         chrome.searchBox.active = !search.isEmpty
         chrome.inGroup = currentGroup != Database.rootID
@@ -411,7 +411,7 @@ final class QuickPasteController: NSObject, NSTableViewDataSource, NSTableViewDe
     }
 
     private func newGroup(moving items: [Clip]) {
-        guard let name = prompt(title: "New Group", message: "Group name:", value: "") else { return }
+        guard let name = prompt(title: L10n.tr("New Group"), message: L10n.tr("Group name:"), value: "") else { return }
         let id = db.createGroup(name: name, parent: currentGroup)
         db.setParent(items.map(\.id), id)
         reload()
@@ -451,8 +451,8 @@ final class QuickPasteController: NSObject, NSTableViewDataSource, NSTableViewDe
         let alert = NSAlert()
         alert.messageText = title
         alert.informativeText = message
-        alert.addButton(withTitle: "OK")
-        alert.addButton(withTitle: "Cancel")
+        alert.addButton(withTitle: L10n.tr("OK"))
+        alert.addButton(withTitle: L10n.tr("Cancel"))
         let field = NSTextField(frame: NSRect(x: 0, y: 0, width: 260, height: 24))
         field.stringValue = value
         alert.accessoryView = field
@@ -479,23 +479,23 @@ final class QuickPasteController: NSObject, NSTableViewDataSource, NSTableViewDe
     private func groupMenuItems(selection: [Clip]) -> [NSMenuItem] {
         let groups = db.groups()
         let hasSelection = !selection.isEmpty
-        var moveItems = [NSMenuItem("Main List", enabled: hasSelection && currentGroup != Database.rootID) { [weak self] in
+        var moveItems = [NSMenuItem(L10n.tr("Main List"), enabled: hasSelection && currentGroup != Database.rootID) { [weak self] in
             self?.move(selection, to: Database.rootID)
         }]
         if !groups.isEmpty { moveItems.append(.separator()) }
         moveItems += groups.map { g in
             NSMenuItem(g.text, enabled: hasSelection && !selection.contains { $0.id == g.id }) { [weak self] in self?.move(selection, to: g.id) }
         }
-        var viewItems = [NSMenuItem("All Clips", checked: currentGroup == Database.rootID) { [weak self] in self?.enterGroup(Database.rootID) }]
+        var viewItems = [NSMenuItem(L10n.tr("All Clips"), checked: currentGroup == Database.rootID) { [weak self] in self?.enterGroup(Database.rootID) }]
         if !groups.isEmpty { viewItems.append(.separator()) }
         viewItems += groups.map { g in
             NSMenuItem(g.text, checked: currentGroup == g.id) { [weak self] in self?.enterGroup(g.id) }
         }
         return [
-            NSMenuItem("New Group…") { [weak self] in self?.newGroup(moving: []) },
-            NSMenuItem("New Group From Selection…", enabled: hasSelection) { [weak self] in self?.newGroup(moving: selection) },
-            .submenu("Move to Group", moveItems),
-            .submenu("View Group", viewItems),
+            NSMenuItem(L10n.tr("New Group…")) { [weak self] in self?.newGroup(moving: []) },
+            NSMenuItem(L10n.tr("New Group From Selection…"), enabled: hasSelection) { [weak self] in self?.newGroup(moving: selection) },
+            .submenu(L10n.tr("Move to Group"), moveItems),
+            .submenu(L10n.tr("View Group"), viewItems),
         ]
     }
 
@@ -520,73 +520,73 @@ final class QuickPasteController: NSObject, NSTableViewDataSource, NSTableViewDe
         let menu = NSMenu()
         menu.autoenablesItems = false
         let items: [NSMenuItem] = [
-            NSMenuItem("Paste", enabled: hasClip) { [weak self] in self?.paste(selection) },
-            .submenu("Paste Special", [
-                NSMenuItem("Plain Text Only", enabled: isText) { [weak self] in self?.paste(selection, plainText: true) },
+            NSMenuItem(L10n.tr("Paste"), enabled: hasClip) { [weak self] in self?.paste(selection) },
+            .submenu(L10n.tr("Paste Special"), [
+                NSMenuItem(L10n.tr("Plain Text Only"), enabled: isText) { [weak self] in self?.paste(selection, plainText: true) },
                 .separator(),
-                special("UPPER CASE") { $0.uppercased() },
-                special("lower case") { $0.lowercased() },
-                special("Capitalize") { $0.capitalized },
-                special("Sentence case", TextTransform.sentenceCase),
-                special("Camel Case", TextTransform.camelCase),
-                special("Slugify", TextTransform.slugify),
+                special(L10n.tr("UPPER CASE")) { $0.uppercased() },
+                special(L10n.tr("lower case")) { $0.lowercased() },
+                special(L10n.tr("Capitalize")) { $0.capitalized },
+                special(L10n.tr("Sentence case"), TextTransform.sentenceCase),
+                special(L10n.tr("Camel Case"), TextTransform.camelCase),
+                special(L10n.tr("Slugify"), TextTransform.slugify),
                 .separator(),
-                special("Remove Line Feeds", TextTransform.removeLineFeeds),
-                special("Paste + One Line Feed") { $0 + "\n" },
-                special("Paste + Two Line Feeds") { $0 + "\n\n" },
-                special("Trim White Space") { $0.trimmingCharacters(in: .whitespacesAndNewlines) },
-                special("Add Current Time", TextTransform.addCurrentTime),
-                special("Typoglycemia", TextTransform.typoglycemia),
+                special(L10n.tr("Remove Line Feeds"), TextTransform.removeLineFeeds),
+                special(L10n.tr("Paste + One Line Feed")) { $0 + "\n" },
+                special(L10n.tr("Paste + Two Line Feeds")) { $0 + "\n\n" },
+                special(L10n.tr("Trim White Space")) { $0.trimmingCharacters(in: .whitespacesAndNewlines) },
+                special(L10n.tr("Add Current Time"), TextTransform.addCurrentTime),
+                special(L10n.tr("Typoglycemia"), TextTransform.typoglycemia),
             ]),
-            NSMenuItem("Copy to Clipboard", enabled: isText) { [weak self] in self?.copyToClipboard(selection) },
+            NSMenuItem(L10n.tr("Copy to Clipboard"), enabled: isText) { [weak self] in self?.copyToClipboard(selection) },
             .separator(),
-            .submenu("Groups", groupMenuItems(selection: selection)),
-            .submenu("Clip Order", [
-                NSMenuItem("Move to Top", enabled: hasClip) { [weak self] in
+            .submenu(L10n.tr("Groups"), groupMenuItems(selection: selection)),
+            .submenu(L10n.tr("Clip Order"), [
+                NSMenuItem(L10n.tr("Move to Top"), enabled: hasClip) { [weak self] in
                     selection.reversed().forEach { self?.db.moveToTop($0.id) }
                     self?.reload()
                 },
                 .separator(),
-                NSMenuItem("Make Top Sticky Clip", enabled: hasClip) { [weak self] in
+                NSMenuItem(L10n.tr("Make Top Sticky Clip"), enabled: hasClip) { [weak self] in
                     selection.reversed().forEach { self?.db.setSticky($0.id, .top) }
                     self?.reload()
                 },
-                NSMenuItem("Make Last Sticky Clip", enabled: hasClip) { [weak self] in
+                NSMenuItem(L10n.tr("Make Last Sticky Clip"), enabled: hasClip) { [weak self] in
                     selection.forEach { self?.db.setSticky($0.id, .last) }
                     self?.reload()
                 },
-                NSMenuItem("Remove Sticky Setting", enabled: selection.contains { $0.isSticky }) { [weak self] in
+                NSMenuItem(L10n.tr("Remove Sticky Setting"), enabled: selection.contains { $0.isSticky }) { [weak self] in
                     selection.forEach { self?.db.setSticky($0.id, .none) }
                     self?.reload()
                 },
             ]),
-            NSMenuItem("Never Auto Delete", enabled: isText, checked: clip?.dontAutoDelete ?? false) { [weak self] in
+            NSMenuItem(L10n.tr("Never Auto Delete"), enabled: isText, checked: clip?.dontAutoDelete ?? false) { [weak self] in
                 let value = !(clip?.dontAutoDelete ?? false)
                 selection.forEach { self?.db.setDontAutoDelete($0.id, value) }
                 self?.reload()
             },
-            NSMenuItem("View Full Description", enabled: hasClip) { [weak self] in self?.toggleDescription() },
-            NSMenuItem("Properties…", enabled: hasClip) { [weak self] in self?.showProperties() },
-            NSMenuItem("Delete Clip", enabled: hasClip) { [weak self] in self?.deleteSelected() },
+            NSMenuItem(L10n.tr("View Full Description"), enabled: hasClip) { [weak self] in self?.toggleDescription() },
+            NSMenuItem(L10n.tr("Properties…"), enabled: hasClip) { [weak self] in self?.showProperties() },
+            NSMenuItem(L10n.tr("Delete Clip"), enabled: hasClip) { [weak self] in self?.deleteSelected() },
             .separator(),
-            .submenu("Quick Options", [
-                .submenu("Lines Per Row", (1...5).map { n in option("\(n)", checked: S.linesPerRow == n) { S.linesPerRow = n } }),
-                .submenu("Font Size", [11, 12, 13, 14, 16, 18].map { n in option("\(n)", checked: S.fontSize == n) { S.fontSize = n } }),
-                .submenu("Transparency", [0, 5, 10, 15, 20, 25, 30, 40].map { n in
-                    option(n == 0 ? "None" : "\(n)%", checked: S.transparency == n) { S.transparency = n }
+            .submenu(L10n.tr("Quick Options"), [
+                .submenu(L10n.tr("Lines Per Row"), (1...5).map { n in option("\(n)", checked: S.linesPerRow == n) { S.linesPerRow = n } }),
+                .submenu(L10n.tr("Font Size"), [11, 12, 13, 14, 16, 18].map { n in option("\(n)", checked: S.fontSize == n) { S.fontSize = n } }),
+                .submenu(L10n.tr("Transparency"), [0, 5, 10, 15, 20, 25, 30, 40].map { n in
+                    option(n == 0 ? L10n.tr("None") : "\(n)%", checked: S.transparency == n) { S.transparency = n }
                 }),
-                .submenu("Positioning", ["At Caret", "At Cursor", "At Previous Position"].enumerated().map { i, title in
+                .submenu(L10n.tr("Positioning"), [L10n.tr("At Caret"), L10n.tr("At Cursor"), L10n.tr("At Previous Position")].enumerated().map { i, title in
                     option(title, checked: S.position == i) { S.position = i }
                 }),
                 .separator(),
-                option("Always on Top", checked: S.alwaysOnTop) { S.alwaysOnTop.toggle() },
-                option("Show Thumbnails", checked: S.showThumbnails) { S.showThumbnails.toggle() },
-                option("Dark Theme", checked: S.darkTheme) { S.darkTheme.toggle() },
+                option(L10n.tr("Always on Top"), checked: S.alwaysOnTop) { S.alwaysOnTop.toggle() },
+                option(L10n.tr("Show Thumbnails"), checked: S.showThumbnails) { S.showThumbnails.toggle() },
+                option(L10n.tr("Dark Theme"), checked: S.darkTheme) { S.darkTheme.toggle() },
             ]),
-            NSMenuItem("Options…") { AppDelegate.shared.showOptions() },
+            NSMenuItem(L10n.tr("Options…")) { AppDelegate.shared.showOptions() },
             .separator(),
-            NSMenuItem(S.connected ? "Disconnect from Clipboard" : "Connect to Clipboard") { AppDelegate.shared.toggleConnected() },
-            NSMenuItem("Exit") { NSApp.terminate(nil) },
+            NSMenuItem(S.connected ? L10n.tr("Disconnect from Clipboard") : L10n.tr("Connect to Clipboard")) { AppDelegate.shared.toggleConnected() },
+            NSMenuItem(L10n.tr("Exit")) { NSApp.terminate(nil) },
         ]
         items.forEach(menu.addItem)
         return menu

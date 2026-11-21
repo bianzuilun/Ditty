@@ -21,6 +21,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             snapshot(to: args[i + 1])
             exit(0)
         }
+        if let i = args.firstIndex(of: "--options-snapshot"), i + 1 < args.count {
+            let tab = args.firstIndex(of: "--tab").flatMap { Int(args[$0 + 1]) } ?? 0
+            optionsSnapshot(to: args[i + 1], tab: tab)
+            exit(0)
+        }
 
         if let bundleID = Bundle.main.bundleIdentifier,
            NSRunningApplication.runningApplications(withBundleIdentifier: bundleID).contains(where: { $0 != NSRunningApplication.current }) {
@@ -81,13 +86,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         menu.autoenablesItems = false
         let hotKey = KeyNames.describe(keyCode: S.hotKeyCode, carbonModifiers: S.hotKeyMods)
         [
-            NSMenuItem("Show Ditty    \(hotKey)") { [weak self] in self?.quickPaste.show() },
+            NSMenuItem(L10n.tr("Show Ditty    %@", hotKey)) { [weak self] in self?.quickPaste.show() },
             .separator(),
-            NSMenuItem("Options…") { [weak self] in self?.showOptions() },
-            NSMenuItem(S.connected ? "Disconnect from Clipboard" : "Connect to Clipboard") { [weak self] in self?.toggleConnected() },
-            NSMenuItem("Delete All Clips…") { [weak self] in self?.deleteAllClips() },
+            NSMenuItem(L10n.tr("Options…")) { [weak self] in self?.showOptions() },
+            NSMenuItem(S.connected ? L10n.tr("Disconnect from Clipboard") : L10n.tr("Connect to Clipboard")) { [weak self] in self?.toggleConnected() },
+            NSMenuItem(L10n.tr("Delete All Clips…")) { [weak self] in self?.deleteAllClips() },
             .separator(),
-            NSMenuItem("Exit") { NSApp.terminate(nil) },
+            NSMenuItem(L10n.tr("Exit")) { NSApp.terminate(nil) },
         ].forEach(menu.addItem)
         return menu
     }
@@ -101,17 +106,17 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         let main = NSMenu()
         let app = NSMenuItem()
         app.submenu = NSMenu()
-        app.submenu?.addItem(withTitle: "Quit Ditty", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+        app.submenu?.addItem(withTitle: L10n.tr("Quit Ditty"), action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
         main.addItem(app)
         let edit = NSMenuItem()
-        let editMenu = NSMenu(title: "Edit")
-        editMenu.addItem(withTitle: "Undo", action: Selector(("undo:")), keyEquivalent: "z")
-        editMenu.addItem(withTitle: "Redo", action: Selector(("redo:")), keyEquivalent: "Z")
+        let editMenu = NSMenu(title: L10n.tr("Edit"))
+        editMenu.addItem(withTitle: L10n.tr("Undo"), action: Selector(("undo:")), keyEquivalent: "z")
+        editMenu.addItem(withTitle: L10n.tr("Redo"), action: Selector(("redo:")), keyEquivalent: "Z")
         editMenu.addItem(.separator())
-        editMenu.addItem(withTitle: "Cut", action: #selector(NSText.cut(_:)), keyEquivalent: "x")
-        editMenu.addItem(withTitle: "Copy", action: #selector(NSText.copy(_:)), keyEquivalent: "c")
-        editMenu.addItem(withTitle: "Paste", action: #selector(NSText.paste(_:)), keyEquivalent: "v")
-        editMenu.addItem(withTitle: "Select All", action: #selector(NSText.selectAll(_:)), keyEquivalent: "a")
+        editMenu.addItem(withTitle: L10n.tr("Cut"), action: #selector(NSText.cut(_:)), keyEquivalent: "x")
+        editMenu.addItem(withTitle: L10n.tr("Copy"), action: #selector(NSText.copy(_:)), keyEquivalent: "c")
+        editMenu.addItem(withTitle: L10n.tr("Paste"), action: #selector(NSText.paste(_:)), keyEquivalent: "v")
+        editMenu.addItem(withTitle: L10n.tr("Select All"), action: #selector(NSText.selectAll(_:)), keyEquivalent: "a")
         edit.submenu = editMenu
         main.addItem(edit)
         return main
@@ -141,6 +146,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         updateStatusIcon()
     }
 
+    /// Rebuilds every window so a language change is visible right away. Menus are created on
+    /// demand, so only the options window has to be replaced and the popup refreshed.
+    func languageChanged() {
+        let reopen = optionsWindow?.window?.isVisible ?? false
+        optionsWindow?.window?.orderOut(nil)
+        optionsWindow = nil
+        settingsChanged()
+        if reopen { showOptions() }
+    }
+
     func showOptions() {
         quickPaste.hide(returnFocus: false)
         if optionsWindow == nil { optionsWindow = OptionsWindowController(db: db) }
@@ -162,10 +177,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         quickPaste.hide(returnFocus: false)
         let alert = NSAlert()
         alert.alertStyle = .warning
-        alert.messageText = "Delete all clips?"
-        alert.informativeText = "This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone."
-        alert.addButton(withTitle: "Delete")
-        alert.addButton(withTitle: "Cancel")
+        alert.messageText = L10n.tr("Delete all clips?")
+        alert.informativeText = L10n.tr("This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone.")
+        alert.addButton(withTitle: L10n.tr("Delete"))
+        alert.addButton(withTitle: L10n.tr("Cancel"))
         NSApp.activate(ignoringOtherApps: true)
         if alert.runModal() == .alertFirstButtonReturn {
             db.deleteAllDisposable()
@@ -178,10 +193,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         guard !accessibilityExplained else { return }
         accessibilityExplained = true
         let alert = NSAlert()
-        alert.messageText = "Ditty needs the Accessibility permission to paste for you"
-        alert.informativeText = "The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility."
-        alert.addButton(withTitle: "Open System Settings")
-        alert.addButton(withTitle: "Not Now")
+        alert.messageText = L10n.tr("Ditty needs the Accessibility permission to paste for you")
+        alert.informativeText = L10n.tr("The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility.")
+        alert.addButton(withTitle: L10n.tr("Open System Settings"))
+        alert.addButton(withTitle: L10n.tr("Not Now"))
         NSApp.activate(ignoringOtherApps: true)
         if alert.runModal() == .alertFirstButtonReturn {
             Paster.requestAccessibility()
@@ -205,6 +220,39 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         quickPaste = QuickPasteController(db: db)
         quickPaste.currentClipID = db.fetch(parent: Database.rootID, search: "").last?.id
         quickPaste.snapshot(to: path)
+        for suffix in ["", "-wal", "-shm"] { try? FileManager.default.removeItem(atPath: temp + suffix) }
+    }
+
+    /// Renders the options window with the given tab (0 General … 4 About) into a PNG,
+    /// so UI changes can be checked without screen-recording permission. The window is
+    /// put on screen for a moment, because system (dynamic) colours only resolve there.
+    private func optionsSnapshot(to path: String, tab: Int) {
+        let temp = NSTemporaryDirectory() + "ditty-options-\(ProcessInfo.processInfo.processIdentifier).db"
+        let controller = OptionsWindowController(db: Database(path: temp))
+        guard let window = controller.window, let view = window.contentView else { return }
+        window.center()
+        if let tabs = view.subviews.compactMap({ $0 as? NSTabView }).first, tab < tabs.numberOfTabViewItems {
+            tabs.selectTabViewItem(at: tab)
+        }
+        window.orderFrontRegardless()
+        window.layoutIfNeeded()
+        RunLoop.current.run(until: Date(timeIntervalSinceNow: 0.4))
+        defer { window.orderOut(nil) }
+        guard let rep = view.bitmapImageRepForCachingDisplay(in: view.bounds) else { return }
+        view.cacheDisplay(in: view.bounds, to: rep)
+        // cacheDisplay leaves the window background out, so composite the content over it.
+        let size = view.bounds.size
+        let image = NSImage(size: size)
+        image.lockFocus()
+        NSColor.windowBackgroundColor.setFill()
+        NSRect(origin: .zero, size: size).fill()
+        if let cg = rep.cgImage {
+            NSImage(cgImage: cg, size: size).draw(at: .zero, from: .zero, operation: .sourceOver, fraction: 1)
+        }
+        image.unlockFocus()
+        if let tiff = image.tiffRepresentation, let png = NSBitmapImageRep(data: tiff) {
+            try? png.representation(using: .png, properties: [:])?.write(to: URL(fileURLWithPath: path))
+        }
         for suffix in ["", "-wal", "-shm"] { try? FileManager.default.removeItem(atPath: temp + suffix) }
     }
 }

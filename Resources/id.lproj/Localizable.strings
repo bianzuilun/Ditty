@@ -1,0 +1,166 @@
+/* Ditty — Bahasa Indonesia */
+
+/* Menu bilah status */
+"Show Ditty    %@" = "Tampilkan Ditty    %@";
+"Options…" = "Opsi…";
+"Disconnect from Clipboard" = "Putuskan dari Papan Klip";
+"Connect to Clipboard" = "Sambungkan ke Papan Klip";
+"Delete All Clips…" = "Hapus Semua Klip…";
+"Exit" = "Keluar";
+
+/* Menu aplikasi dan Edit */
+"Quit Ditty" = "Keluar dari Ditty";
+"Edit" = "Edit";
+"Undo" = "Urungkan";
+"Redo" = "Ulangi";
+"Cut" = "Potong";
+"Copy" = "Salin";
+"Paste" = "Tempel";
+"Select All" = "Pilih Semua";
+
+/* Peringatan */
+"Delete all clips?" = "Hapus semua klip?";
+"This removes every saved copy except sticky clips, clips marked Never Auto Delete and clips inside groups. It cannot be undone." = "Ini menghapus semua salinan tersimpan kecuali klip yang disematkan, klip bertanda Jangan Hapus Otomatis, dan klip di dalam grup. Tindakan ini tidak bisa dibatalkan.";
+"Delete" = "Hapus";
+"Cancel" = "Batal";
+"Ditty needs the Accessibility permission to paste for you" = "Ditty perlu izin Aksesibilitas untuk menempel untuk Anda";
+"The clip is on your clipboard, so you can press ⌘V yourself right now.\n\nTo let Ditty paste automatically, turn on Ditty under System Settings → Privacy & Security → Accessibility." = "Klip sudah ada di papan klip Anda, jadi Anda bisa menekan ⌘V sendiri sekarang.\n\nAgar Ditty menempel secara otomatis, aktifkan Ditty di Pengaturan Sistem → Privasi & Keamanan → Aksesibilitas.";
+"Open System Settings" = "Buka Pengaturan Sistem";
+"Not Now" = "Nanti Saja";
+
+/* Jendela opsi */
+"Ditty Options" = "Opsi Ditty";
+"General" = "Umum";
+"Supported Types" = "Jenis yang Didukung";
+"Keyboard Shortcuts" = "Pintasan Papan Ketik";
+"Quick Paste" = "Tempel Cepat";
+"About" = "Tentang";
+
+/* Tab Umum */
+"Start Ditty on system startup" = "Jalankan Ditty saat sistem menyala";
+"Ditty could not change its login item. It has to run from the Ditty.app bundle for this to work." = "Ditty tidak dapat mengubah item loginya. Agar berfungsi, aplikasi harus dijalankan dari paket Ditty.app.";
+"Maximum number of saved copies" = "Jumlah salinan tersimpan maksimum";
+"Paste entries expire after" = "Klip kedaluwarsa setelah";
+"days" = "hari";
+"Sticky clips, clips marked Never Auto Delete and clips inside groups are never removed automatically." = "Klip yang disematkan, klip bertanda Jangan Hapus Otomatis, dan klip di dalam grup tidak pernah dihapus otomatis.";
+"Update clip order on paste" = "Perbarui urutan klip saat menempel";
+"Theme:" = "Tema:";
+"Ditto (default)" = "Ditto (bawaan)";
+"Dark" = "Gelap";
+"Language:" = "Bahasa:";
+"System Default" = "Mengikuti Sistem";
+"Database:" = "Basis data:";
+"Show in Finder" = "Tampilkan di Finder";
+
+/* Tab Jenis yang Didukung */
+"Ditty saves these kinds of clipboard data:" = "Ditty menyimpan jenis data papan klip berikut:";
+"Plain text" = "Teks biasa";
+"Rich text (RTF)" = "Teks kaya (RTF)";
+"HTML" = "HTML";
+"Images" = "Gambar";
+"Files copied in Finder" = "File yang disalin di Finder";
+"Copies that an app marks as confidential or temporary — password managers do this — are never saved." = "Salinan yang ditandai aplikasi sebagai rahasia atau sementara — pengelola kata sandi melakukannya — tidak pernah disimpan.";
+
+/* Tab Pintasan Papan Ketik */
+"Activate Ditty:" = "Aktifkan Ditty:";
+"Click the button, then press the new shortcut." = "Klik tombolnya, lalu tekan pintasan baru.";
+"In the Ditty window:" = "Di jendela Ditty:";
+"Paste the selected clip" = "Tempel klip yang dipilih";
+"Paste as plain text" = "Tempel sebagai teks biasa";
+"Paste clip 1 – 10" = "Tempel klip 1 – 10";
+"Move through the list" = "Berpindah dalam daftar";
+"Delete the selected clips" = "Hapus klip yang dipilih";
+"Copy to the clipboard without pasting" = "Salin ke papan klip tanpa menempel";
+"Show the full clip" = "Tampilkan klip utuh";
+"New group" = "Grup baru";
+"Clip properties" = "Properti klip";
+"Leave the current group" = "Tinggalkan grup saat ini";
+"Clear the search, then close" = "Bersihkan pencarian, lalu tutup";
+
+/* Tab Tempel Cepat */
+"Lines per row:" = "Baris per entri:";
+"Font size:" = "Ukuran font:";
+"Transparency:" = "Transparansi:";
+"Show the window:" = "Tampilkan jendela:";
+"At the text caret" = "Di kursor teks";
+"At the mouse cursor" = "Di kursor mouse";
+"At its previous position" = "Di posisi sebelumnya";
+"Finding the caret needs the Accessibility permission, and not every app reports it; Ditty falls back to the mouse cursor." = "Menemukan kursor teks memerlukan izin Aksesibilitas, dan tidak semua aplikasi melapkannya; Ditty beralih ke kursor mouse.";
+"Always on top (stay open after pasting or clicking elsewhere)" = "Selalu di atas (tetap terbuka setelah menempel atau mengklik di tempat lain)";
+"Show thumbnails for copied images" = "Tampilkan thumbnail untuk gambar yang disalin";
+
+/* Tab Tentang */
+"Version %@" = "Versi %@";
+"An unofficial Mac version of Ditto, the Windows clipboard manager by Scott Brogden (sabrogden.github.io/Ditto). It is not affiliated with or endorsed by the original project." = "Versi Mac tidak resmi dari Ditto, pengelola papan klip Windows buatan Scott Brogden (sabrogden.github.io/Ditto). Tidak berafiliasi dengan maupun didukung oleh proyek aslinya.";
+"%lld clips saved." = "%lld klip tersimpan.";
+
+/* Jendela properti klip */
+"Group Properties" = "Properti Grup";
+"Clip Properties" = "Properti Klip";
+"Date: %@" = "Tanggal: %@";
+"Last pasted: %@" = "Terakhir ditempel: %@";
+"Name:" = "Nama:";
+"Text:" = "Teks:";
+"Description (this clip has no editable text):" = "Deskripsi (klip ini tidak punya teks yang dapat diedit):";
+"Quick paste text:" = "Teks tempel cepat:";
+"Extra text to find this clip by when searching" = "Teks tambahan untuk menemukan klip ini saat mencari";
+"Never auto delete" = "Jangan hapus otomatis";
+"Group:" = "Grup:";
+"Main List" = "Daftar Utama";
+"Saved formats: %@" = "Format tersimpan: %@";
+"OK" = "OK";
+"Image (PNG)" = "Gambar (PNG)";
+"Files" = "File";
+
+/* Popup tempel cepat */
+"Search" = "Cari";
+"Search  ·  %@" = "Cari  ·  %@";
+"New Group" = "Grup Baru";
+"Group name:" = "Nama grup:";
+"All Clips" = "Semua Klip";
+"New Group…" = "Grup Baru…";
+"New Group From Selection…" = "Grup Baru dari Pilihan…";
+"Move to Group" = "Pindahkan ke Grup";
+"View Group" = "Lihat Grup";
+"Paste Special" = "Tempel Khusus";
+"Plain Text Only" = "Hanya Teks Biasa";
+"UPPER CASE" = "HURUF BESAR";
+"lower case" = "huruf kecil";
+"Capitalize" = "Kapitalisasi";
+"Sentence case" = "Awal kalimat kapital";
+"Camel Case" = "Camel Case";
+"Slugify" = "Slugify";
+"Remove Line Feeds" = "Hapus Pindah Baris";
+"Paste + One Line Feed" = "Tempel + Satu Pindah Baris";
+"Paste + Two Line Feeds" = "Tempel + Dua Pindah Baris";
+"Trim White Space" = "Pangkas Spasi";
+"Add Current Time" = "Tambahkan Waktu Saat Ini";
+"Typoglycemia" = "Typoglycemia";
+"Copy to Clipboard" = "Salin ke Papan Klip";
+"Groups" = "Grup";
+"Clip Order" = "Urutan Klip";
+"Move to Top" = "Pindah ke Atas";
+"Make Top Sticky Clip" = "Sematkan di Atas";
+"Make Last Sticky Clip" = "Sematkan di Bawah";
+"Remove Sticky Setting" = "Lepas Sematan";
+"Never Auto Delete" = "Jangan Hapus Otomatis";
+"View Full Description" = "Lihat Deskripsi Lengkap";
+"Properties…" = "Properti…";
+"Delete Clip" = "Hapus Klip";
+"Quick Options" = "Opsi Cepat";
+"Lines Per Row" = "Baris per Entri";
+"Font Size" = "Ukuran Font";
+"None" = "Tanpa";
+"Positioning" = "Penempatan";
+"At Caret" = "Di Kursor Teks";
+"At Cursor" = "Di Kursor";
+"At Previous Position" = "Di Posisi Sebelumnya";
+"Always on Top" = "Selalu di Atas";
+"Show Thumbnails" = "Tampilkan Thumbnail";
+"Dark Theme" = "Tema Gelap";
+
+/* Lain-lain */
+"Image %@" = "Gambar %@";
+"Type shortcut…" = "Tekan pintasan…";
+"Key %lld" = "Tombol %lld";
+"Space" = "Spasi";

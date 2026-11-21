@@ -48,7 +48,7 @@ enum KeyNames {
         kVK_ANSI_6: "6", kVK_ANSI_7: "7", kVK_ANSI_8: "8", kVK_ANSI_9: "9",
         kVK_ANSI_Grave: "`", kVK_ANSI_Minus: "-", kVK_ANSI_Equal: "=", kVK_ANSI_LeftBracket: "[", kVK_ANSI_RightBracket: "]",
         kVK_ANSI_Backslash: "\\", kVK_ANSI_Semicolon: ";", kVK_ANSI_Quote: "'", kVK_ANSI_Comma: ",", kVK_ANSI_Period: ".",
-        kVK_ANSI_Slash: "/", kVK_Space: "Space", kVK_Return: "↩", kVK_Tab: "⇥", kVK_Delete: "⌫", kVK_ForwardDelete: "⌦",
+        kVK_ANSI_Slash: "/", kVK_Return: "↩", kVK_Tab: "⇥", kVK_Delete: "⌫", kVK_ForwardDelete: "⌦",
         kVK_Escape: "⎋", kVK_LeftArrow: "←", kVK_RightArrow: "→", kVK_UpArrow: "↑", kVK_DownArrow: "↓",
         kVK_Home: "↖", kVK_End: "↘", kVK_PageUp: "⇞", kVK_PageDown: "⇟",
         kVK_F1: "F1", kVK_F2: "F2", kVK_F3: "F3", kVK_F4: "F4", kVK_F5: "F5", kVK_F6: "F6", kVK_F7: "F7", kVK_F8: "F8",
@@ -61,7 +61,8 @@ enum KeyNames {
         if carbonModifiers & optionKey != 0 { s += "⌥" }
         if carbonModifiers & shiftKey != 0 { s += "⇧" }
         if carbonModifiers & cmdKey != 0 { s += "⌘" }
-        return s + (names[keyCode] ?? "Key \(keyCode)")
+        if keyCode == kVK_Space { return s + L10n.tr("Space") }
+        return s + (names[keyCode] ?? L10n.tr("Key %lld", keyCode))
     }
 
     static func carbonModifiers(_ flags: NSEvent.ModifierFlags) -> Int {
@@ -96,7 +97,7 @@ final class HotKeyRecorder: NSButton {
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
     private func refresh() {
-        title = recording ? "Type shortcut…" : KeyNames.describe(keyCode: keyCode, carbonModifiers: mods)
+        title = recording ? L10n.tr("Type shortcut…") : KeyNames.describe(keyCode: keyCode, carbonModifiers: mods)
     }
 
     override var acceptsFirstResponder: Bool { true }
