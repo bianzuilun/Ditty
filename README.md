@@ -1,56 +1,58 @@
 # Ditty
 
-**The Mac version of [Ditto](https://sabrogden.github.io/Ditto/)** — an unofficial, native macOS clipboard manager that looks and works like the Windows original.
+**中文** | [English](README_EN.md)
 
-<img src="docs/screenshot.png" width="365" alt="The Ditty popup: a list of saved clips with a search box underneath">
+**[Ditto](https://sabrogden.github.io/Ditto/) 的 Mac 版** — 非官方的原生 macOS 剪贴板管理器，外观与使用方式贴近 Windows 原版。
 
-Ditty saves everything you copy and lets you paste any of it back later. Press the hotkey, pick a clip (or type to search), press Enter.
+<img src="docs/screenshot.png" width="365" alt="Ditty 弹出窗口：已保存的剪贴列表，下方为搜索框">
 
-> **Status: early release.** It works for daily use on the author's Mac, but it is new. Please [open an issue](../../issues) if something breaks.
+Ditty 会保存你复制过的内容，之后可随时再贴回去。按下快捷键，选一条（或输入搜索），再按 Enter。
 
-Ditty is not affiliated with or endorsed by Ditto or its author, Scott Brogden. It is a separate program written from scratch in Swift; it borrows Ditto's look, defaults and way of working because people moving from Windows keep asking for exactly that.
+> **状态：早期版本。** 作者在自己的 Mac 上日常可用，但项目仍较新。若有问题，请[提交 Issue](../../issues)。
 
-## Features
+Ditty 与 Ditto 及其作者 Scott Brogden 无关联，也未获其背书。这是用 Swift 从零编写的独立程序；借鉴 Ditto 的外观、默认设置与交互，是因为从 Windows 迁过来的用户常希望得到同样的体验。
 
-- Saves text, rich text, HTML, images and files copied in Finder
-- Popup at the text caret (or mouse cursor) with Ditto's default look, plus a dark theme
-- Search as you type, with matches highlighted
-- Paste with Enter, paste as plain text with Shift+Enter, paste clips 1–10 with ⌘1–⌘0
-- Paste Special: upper/lower case, capitalize, sentence case, camel case, slugify, remove line feeds, trim, and more
-- Groups, sticky clips, and "never auto delete"
-- Clip properties, including editing a clip's text
-- Keeps the last 500 copies by default, with optional expiry in days
-- Skips copies that password managers mark as confidential
-- Interface in 15 languages (see below), chosen automatically from your system language
-- Everything stays on your Mac, in a SQLite database under `~/Library/Application Support/Ditty`
+## 功能
 
-Not here yet, compared with Ditto: network sync ("Friends"), import/export (including importing a Ditto database), per-clip global hotkeys, and the clip compare tool.
+- 保存文本、富文本、HTML、图片，以及在访达中复制的文件
+- 在文本插入点（或鼠标位置）弹出窗口，沿用 Ditto 默认外观，并提供深色主题
+- 边输入边搜索，匹配内容高亮
+- Enter 粘贴，Shift+Enter 以纯文本粘贴，⌘1–⌘0 粘贴第 1–10 条
+- 特殊粘贴：大小写转换、首字母大写、句首大写、驼峰、slugify、去除换行、去首尾空白等
+- 分组、置顶剪贴，以及「永不自动删除」
+- 剪贴属性，包括编辑剪贴文本
+- 默认保留最近 500 次复制，可选按天数过期
+- 跳过密码管理器标记为机密的复制内容
+- 界面支持 15 种语言（见下文），按系统语言自动选择
+- 数据仅保存在本机，位于 `~/Library/Application Support/Ditty` 下的 SQLite 数据库
 
-## Install
+相对 Ditto 尚未提供的功能：网络同步（「Friends」）、导入/导出（含导入 Ditto 数据库）、单条剪贴的全局快捷键，以及剪贴对比工具。
 
-With [Homebrew](https://brew.sh):
+## 安装
+
+使用 [Homebrew](https://brew.sh)：
 
 ```sh
 brew install --cask 20101997/tap/ditty
 ```
 
-Or by hand:
+或手动安装：
 
-1. Download **Ditty.zip** from the [latest release](https://github.com/20101997/Ditty/releases/latest) and unzip it.
-2. Drag **Ditty.app** into your Applications folder and open it.
-3. macOS will refuse the first time, because Ditty is not signed with a paid Apple developer certificate. Open **System Settings → Privacy & Security**, scroll down, and click **Open Anyway** next to the message about Ditty.
+1. 从[最新发布页](https://github.com/20101997/Ditty/releases/latest)下载 **Ditty.zip** 并解压。
+2. 将 **Ditty.app** 拖入「应用程序」文件夹并打开。
+3. 首次打开时 macOS 会拦截，因为 Ditty 未使用付费的 Apple 开发者证书签名。打开 **系统设置 → 隐私与安全性**，向下滚动，在关于 Ditty 的提示旁点击 **仍要打开**。
 
-A 〃 icon appears in the menu bar. Ditty runs on macOS 13 or later, on both Apple Silicon and Intel Macs.
+菜单栏会出现 〃 图标。Ditty 支持 macOS 13 及以上，同时兼容 Apple Silicon 与 Intel Mac。
 
-If you prefer the Terminal, this does the same as step 3 (the Homebrew install does it for you):
+若更习惯用终端，下面这条命令与第 3 步效果相同（Homebrew 安装会自动处理）：
 
 ```sh
 xattr -dr com.apple.quarantine /Applications/Ditty.app
 ```
 
-### Build it yourself
+### 自行编译
 
-You need Apple's Command Line Tools (`xcode-select --install`); full Xcode is not required.
+需要 Apple 命令行工具（`xcode-select --install`）；不必安装完整版 Xcode。
 
 ```sh
 git clone https://github.com/20101997/Ditty.git
@@ -58,46 +60,46 @@ cd Ditty
 ./build.sh --install
 ```
 
-### Let Ditty paste for you
+### 让 Ditty 代为粘贴
 
-To paste into other apps, Ditty has to press ⌘V on your behalf, and macOS only allows that with your permission: turn on **Ditty** under **System Settings → Privacy & Security → Accessibility**.
+要向其他应用粘贴，Ditty 需要代你按下 ⌘V，而 macOS 只有在你授权后才允许这样做：在 **系统设置 → 隐私与安全性 → 辅助功能** 中开启 **Ditty**。
 
-Without it, choosing a clip still puts it on the clipboard; you press ⌘V yourself.
+未开启时，选择一条剪贴仍会写入剪贴板，但需要你自己按 ⌘V。
 
-macOS ties this permission to the exact build, so you have to turn it on again after installing a new version: remove Ditty from the list and add it back. (If you build it yourself, setting `SIGN_ID` to a signing identity when running `build.sh` avoids that.)
+macOS 将此项权限与具体构建绑定，因此安装新版本后需重新开启：从列表中移除 Ditty，再重新添加。（若自行编译，运行 `build.sh` 时将 `SIGN_ID` 设为签名身份即可避免这一问题。）
 
-## Using it
+## 使用方法
 
-| Key | What it does |
+| 按键 | 作用 |
 |---|---|
-| `⌃` + `` ` `` | Open Ditty (change it in Options → Keyboard Shortcuts) |
-| `↩` | Paste the selected clip |
-| `⇧↩` | Paste as plain text |
-| `⌘1` – `⌘0` | Paste clip 1 – 10 |
-| `↑` `↓` | Move through the list (hold `⇧` to select several) |
-| `⌘⌫` or `⌦` | Delete the selected clips |
-| `⌘C` | Copy to the clipboard without pasting |
-| `F3` | Show the whole clip |
-| `F7` | New group |
-| `⌥↩` | Clip properties |
-| `⎋` | Clear the search, then close |
+| `⌃` + `` ` `` | 打开 Ditty（可在「选项 → 键盘快捷键」中修改） |
+| `↩` | 粘贴所选剪贴 |
+| `⇧↩` | 以纯文本粘贴 |
+| `⌘1` – `⌘0` | 粘贴第 1 – 10 条 |
+| `↑` `↓` | 在列表中移动（按住 `⇧` 可多选） |
+| `⌘⌫` 或 `⌦` | 删除所选剪贴 |
+| `⌘C` | 复制到剪贴板但不粘贴 |
+| `F3` | 显示完整剪贴内容 |
+| `F7` | 新建分组 |
+| `⌥↩` | 剪贴属性 |
+| `⎋` | 先清除搜索，再关闭 |
 
-Right-click a clip, or click `···`, for everything else. Click the menu bar icon to open Ditty; right-click it for Options and Exit.
+右键点击剪贴，或点击 `···`，可进行其他操作。点击菜单栏图标可打开 Ditty；右键点击可打开「选项」和「退出」。
 
-## Interface languages
+## 界面语言
 
-Ditty speaks 15 languages, listed in Options → General → Language with their native names:
+Ditty 支持 15 种语言，在「选项 → 通用 → 语言」中以其本地名称列出：
 
 English · 简体中文 · हिन्दी · Español · Français · العربية · বাংলা · Português · Русский · اردو · Bahasa Indonesia · Deutsch · 繁體中文 · 日本語 · 한국어
 
-- **By default Ditty follows your system language** ("System Default"): macOS picks the best match among the bundled translations every launch. Selecting a language in Options pins it.
-- Arabic and Urdu switch the interface to right-to-left layout automatically.
-- Translations live in `Resources/<code>.lproj/Localizable.strings`, one table per language; English strings double as the lookup keys, so a missing entry falls back to English. After adding or editing a language, run `python3 scripts/validate_l10n.py` to check keys and printf-style placeholders against English.
+- **默认跟随系统语言**（「系统默认」）：每次启动时，macOS 会在已捆绑的翻译中选择最匹配的语言。在选项中选择某语言后会固定使用该语言。
+- 阿拉伯语与乌尔都语会自动切换为从右到左布局。
+- 翻译文件位于 `Resources/<code>.lproj/Localizable.strings`，每种语言一张表；英文字符串同时作为查找键，缺失条目会回退到英文。添加或编辑语言后，运行 `python3 scripts/validate_l10n.py`，可对照英文检查键名与 printf 风格占位符。
 
-## Support
+## 支持
 
-Ditty is free. If it saves you time, you can [buy me a coffee](https://buymeacoffee.com/ahmedchemkC) ☕
+Ditty 免费使用。若它帮你节省了时间，可以[请我喝杯咖啡](https://buymeacoffee.com/ahmedchemkC) ☕
 
-## License
+## 许可证
 
-[GPL-3.0](LICENSE), the same licence as Ditto.
+[GPL-3.0](LICENSE)，与 Ditto 相同。
